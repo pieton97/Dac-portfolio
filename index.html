@@ -12,60 +12,79 @@
  </head>
  <body>
   <div class="container">
-    <h1>Welcome to my portfolio!</h1>
-  
-    <hr>
+    <header>
+      <h1>Welcome to my portfolio!</h1>
+      <!-- this is where my nav bar, heading, logo etc will go -->
+    </header>
+    
     <!-- can change hr style like height 3px, background color, etc -->
-    <h2>About me</h2>
-    <p>section about me</p>
-
-    <hr>
-
-    <h2>Projects</h2>
-    <p>Click on the buttons inside the tabbed menu:</p>
-    
-    <div class="conte">
-    <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-      <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-    </div>
-    
-    <div id="London" class="tabcontent">
-      <h3>London</h3>
-      <p>London is the capital city of England.</p>
-    </div>
-    
-    <div id="Paris" class="tabcontent">
-      <h3>Paris</h3>
-      <p>Paris is the capital of France.</p> 
-    </div>
-    
-    <div id="Tokyo" class="tabcontent">
-      <h3>Tokyo</h3>
-      <p>Tokyo is the capital of Japan.</p>
-    </div>
-    
-    </div>
-
-    <hr>
-
-    <section>
-      <h2>Contact me</h2>
-      <form action="">
-        <fieldset>
-          <legend>Leave me a message or hit me up on email!</legend>
-          <label><input id="one" type="radio" name="example" value="one"> one</label>
-          <label><input id="two" type="radio" name="example" value="two"> two</label>
-        </fieldset>
-        <textarea name="" id="" cols="30" rows="5"></textarea>
-        <input type="text" name="your-name" placeholder="Enter your name" required>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-
     <hr>
   
+    <main>
+      <section>
+        <h2>About me</h2>
+        <p>section about me</p>
+        <!-- top section about me -->
+      </section>
+      
+      <hr>
+
+      <section>
+        <h2>Projects</h2>
+        <p>Click on the buttons inside the tabbed menu:</p>
+        
+        <div class="conte">
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+          <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+          <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+        </div>
+        
+        <div id="London" class="tabcontent">
+          <h3>London</h3>
+          <p>London is the capital city of England.</p>
+        </div>
+        
+        <div id="Paris" class="tabcontent">
+          <h3>Paris</h3>
+          <p>Paris is the capital of France.</p> 
+        </div>
+        
+        <div id="Tokyo" class="tabcontent">
+          <h3>Tokyo</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+        
+        </div>
+        <!-- mid section about my main projects -->
+      </section>
+
+      <section>
+        <!-- lower section about my other projects -->
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Contact me</h2>
+        <form action="">
+          <fieldset>
+            <legend>Leave me a message or hit me up on email!</legend>
+            <label><input id="one" type="radio" name="example" value="one"> one</label>
+            <label><input id="two" type="radio" name="example" value="two"> two</label>
+          </fieldset>
+          <textarea name="" id="" cols="30" rows="5"></textarea>
+          <input type="text" name="your-name" placeholder="Enter your name" required>
+          <button type="submit">Submit</button>
+        </form>
+        <!-- bottom section, contact me form -->
+      </section>
+      
+    </main>
+    
+    <hr>
+    
+    <!-- footer section -->
     <footer>
       <p>this is the footer</p>
     </footer>

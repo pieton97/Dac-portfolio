@@ -1,3 +1,9 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   background-color: #c9aa88;
   font-family: Arial;
@@ -47,4 +53,11 @@ body {
 .conte {
   display: flex;
   justify-content:flex-start
+}
+
+/* fcc stuff */
+h2 {
+  border-bottom: 4px solid #dfdfe2;
+  margin-top: 0px;
+  padding-top: 60px;
 }
