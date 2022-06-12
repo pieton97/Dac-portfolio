@@ -3,21 +3,27 @@
  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <script src="index.js" defer></script>
-
   <title>Dac's Cool Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- fontawesome file -->
+  <link rel="stylesheet" href="css/all.css">  
+  <script src="index.js" defer></script>
+  <!-- <script src="https://kit.fontawesome.com/086ab87877.js" crossorigin="anonymous"></script> -->
  </head>
  <body>
-  <div class="container">
+ <div class="background-container">
+  <!-- background container is used to style background with animations -->
+  <div class="portfolio-container">
     <header>
-      <h1>Welcome to my portfolio!</h1>
+      <h2><i class="fa-solid fa-robot"></i>Hello!</h2>
+      <h1>I'm Dac...</h1>
+      <h2>A self-taught frontend developer with flair for design, devoted to building quality websites and apps.</h2>
       <!-- this is where my nav bar, heading, logo etc will go -->
     </header>
     
-    <!-- can change hr style like height 3px, background color, etc -->
+    <!-- change hr style like height 3px, background color, etc -->
     <hr>
   
     <main>
@@ -28,43 +34,43 @@
       </section>
       
       <hr>
-
+  
       <section>
-        <h2>Projects</h2>
+        <h2>My Main Projects</h2>
         <p>Click on the buttons inside the tabbed menu:</p>
         
         <div class="conte">
         <div class="tab">
-          <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-          <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-          <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+          <button class="tablinks" onclick="openCity(event, 'project1')">project 1</button>
+          <button class="tablinks" onclick="openCity(event, 'project2')">project 2</button>
+          <button class="tablinks" onclick="openCity(event, 'project3')">project 3</button>
         </div>
         
-        <div id="London" class="tabcontent">
-          <h3>London</h3>
-          <p>London is the capital city of England.</p>
+        <div id="project1" class="tabcontent">
+          <h3>Project 1</h3>
+          <p>placeholder for my project will add later</p>
         </div>
         
-        <div id="Paris" class="tabcontent">
-          <h3>Paris</h3>
-          <p>Paris is the capital of France.</p> 
+        <div id="project2" class="tabcontent">
+          <h3>Project 2</h3>
+          <p>placeholder for my project will add later</p> 
         </div>
         
-        <div id="Tokyo" class="tabcontent">
-          <h3>Tokyo</h3>
-          <p>Tokyo is the capital of Japan.</p>
+        <div id="project3" class="tabcontent">
+          <h3>Project 3</h3>
+          <p>placeholder for my project will add later</p>
         </div>
         
         </div>
         <!-- mid section about my main projects -->
       </section>
-
+  
       <section>
         <!-- lower section about my other projects -->
       </section>
-
+  
       <hr>
-
+  
       <section>
         <h2>Contact me</h2>
         <form action="">
@@ -88,11 +94,16 @@
     <footer>
       <p>this is the footer</p>
     </footer>
-
   </div>
+ </div>
+
   
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
  </body>
 </html>
 
-
+<!--
+  notes on cool things to add
+  -add a dark mode btn, to change page css 
+  -gradient colors with certain background/btns
+  -
+ -->
