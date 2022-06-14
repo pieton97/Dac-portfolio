@@ -1,6 +1,7 @@
 *, *::before, *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,14 +14,19 @@ body {
   background-color: #c9aa88;
   font-family: Arial;
   height: 4000px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+  font-size: 20px;
 }
 
 .background-container {
-  width: 90%;
+  width: 100%;
   margin: 1rem auto;
   padding: 2rem;
   border: 1px solid black;
-  background-color: lightcoral;
+  background-color: pink;
 }
 
 .portfolio-container {
@@ -31,6 +37,35 @@ body {
   background-color: transparent;
 }
 
+li {
+  list-style: none;
+}
+
+.conte {
+  display: flex;
+  justify-content:flex-start
+}
+
+/* fcc stuff */
+/* h2 {
+  border-bottom: 4px solid #dfdfe2;
+} */
+
+section.about > i {
+  font-size: 3rem;
+}
+
+section.about p {
+  margin: 1rem auto;
+}
+
+section {
+  margin: 30px 0;
+}
+
+
+
+/* below is project tabbed section */
 /* Style the tab */
 .tab {
   overflow: hidden;
@@ -71,13 +106,3 @@ body {
   border-top: none;
   width: 70%;
 }
-
-.conte {
-  display: flex;
-  justify-content:flex-start
-}
-
-/* fcc stuff */
-/* h2 {
-  border-bottom: 4px solid #dfdfe2;
-} */

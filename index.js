@@ -1,5 +1,6 @@
 console.log('helllloooo');
 
+//this is for the tabs to open my projects
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
