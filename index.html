@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dac's Cool Portfolio</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="portfolio-css/header.css">
+  <link rel="stylesheet" href="portfolio-css/styles.css">
 
   <!-- fontawesome file -->
   <link rel="stylesheet" href="css/all.css">  
@@ -13,26 +14,27 @@
   <!-- <script src="https://kit.fontawesome.com/086ab87877.js" crossorigin="anonymous"></script> -->
  </head>
  <body>
+  <a id="top"></a>
  <div class="background-container">
   <!-- background-container is used to style background with animations -->
   <div class="portfolio-container">
     <header>
       <!-- this is where my nav bar, heading, logo etc will go -->
-      <p>dac.nguyen</p>
-      <ul>
-        <li>.about</li>
-        <li>.projects</li>
-        <li>.tools</li>
-        <li>.contact</li>
-      </ul>
-      <button>Dark Mode</button>
+      <nav class="navbar">
+        <p><a href="#top">dac.nguyen</a></p>
+        <ul class="nav-menu">
+          <li><a href="#about">.about</a></li>
+          <li><a href="#projects">.projects</a></li>
+          <li><a href="#contact">.contact</a></li>
+        </ul>
+        <button type="button">Dark Mode</button>
+      </nav>
     </header>
     
     <!-- change hr style like height 3px, background color, etc -->
-    <hr>
     
     <main>
-      <section>
+      <section id="landing-front">
         <h1>Hello there, I'm Dac <i class="fa-solid fa-power-off"></i></h1>
         <h2>I'm a frontend web developer, die hard naruto fan, gamer, and occasional food enthusiast</h2>
         <!-- top section about me -->
@@ -40,7 +42,7 @@
       
       <hr>
       
-      <section class="about">
+      <section id="about">
         <!-- bottom section about me -->
         <h2>ABOUT ME</h2>
         <p>
@@ -54,24 +56,24 @@
 
         <p>Hi, I'm Dac and I'm a self-taught developer in Arlington, TX. I'm a curious guy who likes to learn about random things and random stuff about anything.</p>
 
-        <p>Why did I decide to code? Well to be honest, it was just a coincidence when I was looking for oportunities to make money online. Long story short I've tried many different things with both success and failures, but ultimately I chose to be a developer because the things you can do with code is endless. Technology is everywhere in the world today and I believe will be more so in the future. I want to be a part of these core building blocks. I gotta admit though, coding can be challenging at times but I think that's what makes life fun and will help you grow as a person. What's the point of life </p>
+        <p>Why did I decide to code? Well to be honest, it was just a coincidence when I was looking for oportunities to make money online. Long story short I've tried many different things with both success and failures, but ultimately I chose to be a developer because the things you can do with code is endless. Technology is everywhere in the world today and I believe will be more so in the future. I want to be a part of these core building blocks. I gotta admit though, coding can be challenging at times but I think that's what makes life fun and will help you grow as a person.</p>
 
         <p>Other than coding I like to spend my free time watching anime and playing games with friends. My currently favorite game to pass time is valorant, which I was able to reach diamond rank all the way from silver.</p>
 
         <h2>SKILLS</h2>
-        <i class="fa-brands fa-html5"></i>
-        <i class="fa-brands fa-css3-alt"></i>
-        <i class="fa-brands fa-js-square"></i>
-        <i class="fa-brands fa-react"></i>
-        <i class="fa-brands fa-bootstrap"></i>
-        <i class="fa-brands fa-node"></i>
-        <i class="fa-brands fa-git-alt"></i>
-        <i class="fa-brands fa-github"></i>
+        <p><i class="fa-brands fa-html5"></i>HTML</p>
+        <p><i class="fa-brands fa-css3-alt"></i>CSS</p>
+        <p><i class="fa-brands fa-js-square"></i>JAVASCRIPT</p>
+        <p><i class="fa-brands fa-react"></i>REACT</p>
+        <p><i class="fa-brands fa-bootstrap"></i>BOOTSTRAP</p>
+        <p><i class="fa-brands fa-node"></i>NODE.JS</p>
+        <p><i class="fa-brands fa-git-alt"></i>GIT</p>
+        <p><i class="fa-brands fa-github"></i>GITHUB</p>
       </section>
 
       <hr>
 
-      <section>
+      <section id="projects">
         <h2>My Main Projects</h2>
         <p>Click on the buttons inside the tabbed menu:</p>
         
@@ -101,13 +103,9 @@
         <!-- mid section about my main projects -->
       </section>
   
-      <section>
-        <!-- lower section about my other projects -->
-      </section>
-  
       <hr>
   
-      <section>
+      <section id="contact">
         <h2>Contact me</h2>
         <form action="">
           <fieldset>
@@ -142,4 +140,4 @@
   -add a dark mode btn, to change page css 
   -gradient colors with certain background/btns
   -
- -->
+-->

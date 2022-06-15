@@ -1,6 +1,4 @@
 *, *::before, *::after {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -11,34 +9,27 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   background-color: #c9aa88;
   font-family: Arial;
-  height: 4000px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-html {
-  font-size: 20px;
+  height: 3000px;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: monospace, sans-serif;
 }
 
 .background-container {
   width: 100%;
-  margin: 1rem auto;
   padding: 2rem;
-  border: 1px solid black;
   background-color: pink;
 }
 
 .portfolio-container {
   width: 80%;
-  margin: auto;
+  margin: 90px auto;
   padding: 2rem;
   border: 1px solid red;
   background-color: transparent;
-}
-
-li {
-  list-style: none;
 }
 
 .conte {
@@ -51,7 +42,7 @@ li {
   border-bottom: 4px solid #dfdfe2;
 } */
 
-section.about > i {
+section.about i {
   font-size: 3rem;
 }
 

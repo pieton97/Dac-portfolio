@@ -1,0 +1,49 @@
+/* heading/nav bar section */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: pink;
+  font-size: 2rem;
+  z-index: 100;
+  border-bottom: 1px solid black;
+  font-weight: 800;
+}
+
+nav {
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0 10%; */
+}
+
+nav p {
+  width: 40%;
+}
+
+.nav-menu {
+  font-size: 1.5rem;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+nav button {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px;
+}
