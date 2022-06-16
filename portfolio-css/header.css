@@ -7,7 +7,7 @@ header {
   background-color: pink;
   font-size: 2rem;
   z-index: 100;
-  border-bottom: 1px solid black;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.363);
   font-weight: 800;
 }
 
