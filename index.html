@@ -22,12 +22,17 @@
       <!-- this is where my nav bar, heading, logo etc will go -->
       <nav class="navbar">
         <p><a href="#top">dac.nguyen</a></p>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
         <ul class="nav-menu">
           <li><a href="#about">.about</a></li>
           <li><a href="#projects">.projects</a></li>
           <li><a href="#contact">.contact</a></li>
+          <button type="button">Dark Mode</button>
         </ul>
-        <button type="button">Dark Mode</button>
       </nav>
     </header>
     
@@ -81,7 +86,7 @@
         
         <div class="conte">
         <div class="tab">
-          <button class="tablinks" onclick="openCity(event, 'project1')">project 1</button>
+          <button class="tablinks" onclick="openCity(event, 'project1')" active>project 1</button>
           <button class="tablinks" onclick="openCity(event, 'project2')">project 2</button>
           <button class="tablinks" onclick="openCity(event, 'project3')">project 3</button>
         </div>

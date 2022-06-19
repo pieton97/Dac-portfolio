@@ -2,7 +2,7 @@ console.log('helllloooo');
 
 //this is for the tabs to open my projects
 function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
+  let i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -14,3 +14,11 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+// header nav menu button on smaller screen
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+const navbarLinks = document.getElementsByClassName('nav-menu')[0];
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+});

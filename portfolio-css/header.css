@@ -12,12 +12,13 @@ header {
 }
 
 nav {
-  height: 90px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* padding: 0 10%; */
+  position: relative;
+  background-color: #333;
+  color: white;
 }
 
 nav p {
@@ -38,7 +39,7 @@ header a {
   color: inherit;
 }
 
-li {
+nav ul li {
   list-style: none;
 }
 
@@ -46,4 +47,78 @@ nav button {
   font-size: 1rem;
   font-weight: 500;
   padding: 10px;
+}
+
+/* menu responsive on smaller screen */
+nav ul {
+  height: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+nav li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.75rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 850px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  nav p {
+    margin-left: 2.5rem;
+  }
+  
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav-menu li {
+    text-align: center;
+  }
+
+  .nav-menu li a {
+    padding: .5rem 1rem;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu button {
+    margin-bottom: 1rem;
+  }
 }
