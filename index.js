@@ -22,3 +22,16 @@ const navbarLinks = document.getElementsByClassName('nav-menu')[0];
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 });
+
+// switch between dark mode and light mode button
+const colorThemeBtn = document.getElementById('color-theme');
+
+colorThemeBtn.addEventListener('click', () => {
+  document.body.classList.toggle("dark-theme");
+  colorThemeBtn.classList.toggle("dark-theme");
+  if (colorThemeBtn.innerHTML === "Dark Mode") {
+    colorThemeBtn.innerHTML = "Light Mode";
+  } else {
+    colorThemeBtn.innerHTML = "Dark Mode";
+  }
+});

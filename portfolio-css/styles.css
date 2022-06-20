@@ -8,20 +8,32 @@
   }
 }
 
+:root {
+  --main-color: white;
+  --secondary-color: #000033;
+}
+
+.dark-theme {
+  --main-color: #121212;
+  --secondary-color: #00FF00;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #c9aa88;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
   font-family: Arial;
   height: 4000px;
   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   font-family: monospace, sans-serif;
+  transition: 0.3s;
 }
 
 
 .background-container {
   width: 100%;
-  background-color: pink;
+  border-bottom: 1px solid black;
 }
 
 .portfolio-container {
