@@ -4,7 +4,6 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: pink;
   font-size: 2rem;
   z-index: 100;
   box-shadow: 0 0 10px rgba(128, 128, 128, 0.363);
@@ -18,7 +17,7 @@ nav {
   align-items: center;
   position: relative;
   background-color: #121212;
-  color: white;
+  color: #F9F6EE;
 }
 
 nav p {
@@ -60,7 +59,7 @@ nav ul {
 nav li a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: #F9F6EE;
   padding: 1rem;
 }
 
@@ -82,7 +81,7 @@ nav li:hover {
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: white;
+  background-color: #F9F6EE;
   border-radius: 10px;
 }
 

@@ -9,13 +9,13 @@
 }
 
 :root {
-  --main-color: white;
+  --main-color: #F9F6EE;
   --secondary-color: #000033;
 }
 
 .dark-theme {
   --main-color: #121212;
-  --secondary-color: #00FF00;
+  --secondary-color: #F9F6EE;
 }
 
 body {
@@ -33,6 +33,7 @@ body {
 
 .background-container {
   width: 100%;
+  min-width: 650px;
   border-bottom: 1px solid black;
 }
 
@@ -41,6 +42,11 @@ body {
   margin: 0 auto;
   /* border: 1px solid red; */
   background-color: transparent;
+}
+
+section {
+  width: 80%;
+  margin: 90px auto;
 }
 
 .text-heading {
@@ -62,10 +68,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  position: relative;
 }
 
-#landing-front h2, #landing-front i {
-  color: blue;
+#landing-front h2, .landing-arrow i {
+  color: rgb(49, 130, 206);;
+}
+
+.landing-arrow {
+  position: absolute;
+  bottom: 15%;
+  right: 15%;
 }
 
 /* about section */
@@ -93,11 +107,6 @@ body {
   display: block;
 }
 
-section {
-  width: 80%;
-  margin: 90px auto;
-
-}
 
 
 /* below is project tabbed section */

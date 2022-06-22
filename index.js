@@ -23,15 +23,31 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 });
 
-// switch between dark mode and light mode button
+// switch between dark mode and light mode button, also saves theme preference 
 const colorThemeBtn = document.getElementById('color-theme');
+
+if (localStorage.getItem("theme") == null) {
+  localStorage.setItem("theme", "Light");
+}
+
+let localTheme = localStorage.getItem("theme");
+
+if (localTheme == "Light") {
+  document.body.classList.remove("dark-theme");
+  colorThemeBtn.innerHTML = "Light Mode";
+} else if (localTheme == "Dark") {
+  document.body.classList.add("dark-theme");
+  colorThemeBtn.innerHTML = "Dark Mode";
+}
 
 colorThemeBtn.addEventListener('click', () => {
   document.body.classList.toggle("dark-theme");
-  colorThemeBtn.classList.toggle("dark-theme");
+  
   if (colorThemeBtn.innerHTML === "Dark Mode") {
     colorThemeBtn.innerHTML = "Light Mode";
+    localStorage.setItem("theme", "Light");
   } else {
     colorThemeBtn.innerHTML = "Dark Mode";
+    localStorage.setItem("theme", "Dark");
   }
 });
