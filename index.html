@@ -16,7 +16,7 @@
  </head>
  <body class="test11">
  <div class="background-container">
-  <!-- background-container is used to style background with animations -->
+  <!-- background-container is used to style background with animations (add later) -->
   <div class="portfolio-container">
     <header>
       <!-- this is where my nav bar, heading, logo etc will go -->
@@ -37,10 +37,10 @@
     </header>
     
     <!-- change hr style like height 3px, background color, etc -->
-    
+    <!-- <i class="fa-solid fa-power-off"></i>  -->
     <main>
       <section id="landing-front">
-        <h1>Hello there, I'm Dac <i class="fa-solid fa-power-off"></i></h1>
+        <h1>Hello there, I'm Dac &#x270C;</h1>
         <h2>I'm a frontend developer, die hard naruto fan, gamer, and food enthusiast</h2>
         <!-- top section about me -->
         <div class="landing-arrow">
@@ -54,24 +54,24 @@
       
       <section id="about">
         <!-- bottom section about me -->
-        <h2 class="text-heading">ABOUT ME</h2>
+        <h2 class="text-heading blue-text">ABOUT ME</h2>
         <p>
           <i class="fa-solid fa-quote-left"></i>
-          There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.
+          Your time is limited, so don’t waste it living someone else’s life.
           <i class="fa-solid fa-quote-right"></i>
         </p>
         <p>
-          <i class="fa-solid fa-angles-right"></i> Albert Einstein
+          <i class="fa-solid fa-angles-right"></i> Steve Jobs
         </p>
 
-        <p>Hi, I'm Dac and I'm a self-taught developer in Arlington, TX. I'm a curious guy who likes to learn about random things and random stuff about anything.</p>
+        <p>Hi, I'm Dac and I'm a self-taught developer. I'm a curious guy who likes to learn about random things and random stuff about anything.</p>
 
-        <p>Why did I decide to code? Well to be honest, it was just a coincidence when I was looking for oportunities to make money online. Long story short I've tried many different things with both success and failures, but ultimately I chose to be a developer because the things you can do with code is endless. Technology is everywhere in the world today and I believe will be more so in the future. I want to be a part of these core building blocks. I gotta admit though, coding can be challenging at times but I think that's what makes life fun and will help you grow as a person.</p>
+        <p><strong>Why did I decide to code?</strong> Tech is everywhere in the world today and I believe will be more so in the future. Amazing things like AI and VR (virtual reality) are still in its early stages so I want to be part of its growth and innovation. What's a better way to start then by building simple but beautiful websites to display these technologies?</p>
 
-        <p><strong>When I'm not in front of a computer screen.</strong> I like to watch anime, hit the gym or play some valorant with friends.</p>
+        <p><strong>When I'm not coding in front of a computer screen.</strong> I like to watch anime, hit the gym or play some valorant with friends.</p>
 
-        <h2 class="text-heading">SKILLS</h2>
-        <div class="skills-logos text-heading">
+        <h2 class="text-heading blue-text">SKILLS</h2>
+        <div class="skills-logos">
           <p><i class="fa-brands fa-html5"></i>HTML</p>
           <p><i class="fa-brands fa-css3-alt"></i>CSS</p>
           <p><i class="fa-brands fa-js-square"></i>JAVASCRIPT</p>
@@ -86,12 +86,12 @@
       <hr>
 
       <section id="projects">
-        <h2 class="text-heading">My Main Projects</h2>
+        <h2 class="text-heading blue-text">My Main Projects</h2>
         <p class="text-heading">Click on the buttons inside the tabbed menu:</p>
         
-        <div class="conte">
+        <!-- <div class="conte"> -->
         <div class="tab">
-          <button class="tablinks" onclick="openCity(event, 'project1')" active>project 1</button>
+          <button class="tablinks" onclick="openCity(event, 'project1')">project s1</button>
           <button class="tablinks" onclick="openCity(event, 'project2')">project 2</button>
           <button class="tablinks" onclick="openCity(event, 'project3')">project 3</button>
         </div>
@@ -104,6 +104,13 @@
         <div id="project2" class="tabcontent">
           <h3>Project 2</h3>
           <p>placeholder for my project will add later</p> 
+          <ul>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+          </ul>
         </div>
         
         <div id="project3" class="tabcontent">
@@ -111,7 +118,7 @@
           <p>placeholder for my project will add later</p>
         </div>
         
-        </div>
+        <!-- </div> -->
         <!-- mid section about my main projects -->
       </section>
   
@@ -119,13 +126,13 @@
   
       <section id="contact">
         <div class="contact-message">
-          <h1>Let's work together</h1>
+          <h1 class="blue-text">Let's work together</h1>
           <div class="contact-mail">
             <p>Have any questions?</p>
-            <p><a href="mailto:huyng97@yahoo.com?subject=Hi lets work together!">Click here to send an email</a> or peep at my socials below</p>
+            <p><a class="mail-link" href="mailto:huyng97@yahoo.com?subject=Hi lets work together!">Click here to send an email</a> or peep my socials out below.</p>
           </div>
           <div class="contact-socials">
-            <a href="#333" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i id="yt-icon" class="fa-brands fa-youtube"></i></a>
             <a href="https://github.com/pieton97" target="_blank"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
@@ -138,7 +145,6 @@
         </form>
         <!-- bottom section, contact me form -->
       </section>
-      
     </main>
     
     <hr>

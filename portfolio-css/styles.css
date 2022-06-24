@@ -7,10 +7,18 @@
     scroll-behavior: smooth;
   }
 }
+/* orig colors
+~black: #000033     (secondary)
+~bonewhite: #F9F6EE (main)
+
+others:
+Royal Blue (#00539CFF) and Peach (#EEA47FFF)
+ */
 
 :root {
   --main-color: #F9F6EE;
-  --secondary-color: #000033;
+  --secondary-color: #121212;
+  --blue-accent: #0072b1;
 }
 
 .dark-theme {
@@ -25,7 +33,6 @@ body {
   background-color: var(--main-color);
   color: var(--secondary-color);
   font-family: Arial;
-  height: 4000px;
   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   font-family: monospace, sans-serif;
   transition: 0.3s;
@@ -33,12 +40,12 @@ body {
 
 .background-container {
   width: 100%;
-  min-width: 650px;
-  border-bottom: 1px solid black;
 }
 
 .portfolio-container {
   width: 85%;
+  min-width: 480px;
+  max-width: 1600px;
   margin: 0 auto;
   /* border: 1px solid red; */
   background-color: transparent;
@@ -55,6 +62,10 @@ section {
   /* background-color: lightblue; */
 }
 
+.blue-text {
+  color: var(--blue-accent);
+}
+
 /* landing front page */
 #landing-front {
   font-size: 40px;
@@ -69,7 +80,7 @@ section {
 }
 
 #landing-front h2, .landing-arrow i {
-  color: rgb(49, 130, 206);;
+  color: var(--blue-accent);
 }
 
 .landing-arrow {
@@ -86,6 +97,11 @@ section {
 #about p {
   margin: 3rem auto;
   font-size: 20px;
+  /* background-color: red; */
+}
+
+#about strong {
+  text-decoration: underline;
 }
 
 .skills-logos {
@@ -98,7 +114,7 @@ section {
 }
 
 .skills-logos i {
-  font-size: 3rem;
+  font-size: 2.4rem;
   display: block;
 }
 
@@ -129,6 +145,30 @@ section {
   font-size: 3rem;
   color: var(--secondary-color);
   margin: 5px;
+  padding: 7px;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.contact-socials i:hover {
+  transform: translate(3px, -5px);
+  color: var(--blue-accent) !important;
+  box-shadow: -3px 5px 5px 1px rgba(128, 128, 128, 0.63);
+}
+
+#yt-icon {
+  color: #FF0000;
+}
+
+.mail-link {
+  padding: 0 5px 0 2px;
+  transition: all 0.3s;
+}
+
+.mail-link:hover {
+  background-color: var(--blue-accent);
+  color: var(--main-color);
+  opacity: 0.8;
 }
 
 #contact form {
@@ -137,7 +177,7 @@ section {
   max-width: 900px;
   min-width: 500px;
   width: 60%;
-  padding: 40px 20px;
+  padding: 50px 27px;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -147,7 +187,7 @@ section {
 form input, form textarea {
   padding: 7px;
   padding-left: 13px;
-  font-size: 1rem;
+  font-size: 1.4rem;
   background-color: #F9F6EE;
   border-radius: 3px;
   border: 1.5px solid #000033;
@@ -162,12 +202,16 @@ form button {
   border-radius: 3px;
   letter-spacing: 3px;
   font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
   transition: .3s;
 }
 
 form button:hover {
-  transform: translate(5px, -5px);
-  opacity: .65;
+  transform: translate(3px, -5px);
+  background-color: var(--blue-accent);
+  box-shadow: -3px 5px 5px 1px rgba(128, 128, 128, 0.63);
+  color: white;
 }
 
 @media (max-width: 990px) {

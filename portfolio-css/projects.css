@@ -1,17 +1,17 @@
-.conte {
+/* .conte {
   display: flex;
   justify-content:flex-start
-}
+} */
 
 
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
+  border: 1px solid #ccc; 
   background-color: #f1f1f1;
   display: flex;
-  flex-direction: column;
-  width: 200px;
+  flex-direction: row;
+  /* width: 200px; */
 }
 
 /* Style the buttons inside the tab */
@@ -24,6 +24,9 @@
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 17px;
+  margin: 8px;
+  border-radius: 3px;
+
 }
 
 /* Change background color of buttons on hover */
@@ -42,5 +45,5 @@
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
-  width: 70%;
+  width: 100%;
 }
