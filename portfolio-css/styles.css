@@ -38,21 +38,21 @@ body {
 }
 
 .portfolio-container {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   /* border: 1px solid red; */
   background-color: transparent;
 }
 
 section {
-  width: 80%;
+  width: 90%;
   margin: 90px auto;
 }
 
 .text-heading {
   text-align: center;
   font-size: 2rem;
-  background-color: lightblue;
+  /* background-color: lightblue; */
 }
 
 /* landing front page */
@@ -103,7 +103,78 @@ section {
 }
 
 /* contact section */
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 15px;
+  padding: 20px;
+}
 
+#contact .contact-message {
+  margin-top: 30px;
+  width: 80%;
+  font-size: 1.5rem;
+}
+
+.contact-mail {
+  margin: 15px 0;
+}
+
+.contact-mail a {
+  color: inherit;
+}
+
+.contact-socials i {
+  font-size: 3rem;
+  color: var(--secondary-color);
+  margin: 5px;
+}
+
+#contact form {
+  box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.418);
+  border-radius: 3px;
+  max-width: 900px;
+  min-width: 500px;
+  width: 60%;
+  padding: 40px 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+form input, form textarea {
+  padding: 7px;
+  padding-left: 13px;
+  font-size: 1rem;
+  background-color: #F9F6EE;
+  border-radius: 3px;
+  border: 1.5px solid #000033;
+}
+
+form button {
+  height: 20%;
+  padding: 8px;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  cursor: pointer;
+  border-radius: 3px;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  transition: .3s;
+}
+
+form button:hover {
+  transform: translate(5px, -5px);
+  opacity: .65;
+}
+
+@media (max-width: 990px) {
+  #contact {
+    flex-direction: column;
+  }
+}
 
 /* footer section */
 footer {
