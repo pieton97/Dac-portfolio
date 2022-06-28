@@ -218,6 +218,9 @@ form button:hover {
   #contact {
     flex-direction: column;
   }
+  #contact form {
+    margin: auto;
+  }
 }
 
 /* footer section */

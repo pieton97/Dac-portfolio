@@ -90,18 +90,20 @@
         <p class="text-heading">Click on the buttons inside the tabbed menu:</p>
         
         <!-- <div class="conte"> -->
-        <div class="tab">
-          <button class="tablinks" onclick="openCity(event, 'project1')">project s1</button>
-          <button class="tablinks" onclick="openCity(event, 'project2')">project 2</button>
-          <button class="tablinks" onclick="openCity(event, 'project3')">project 3</button>
+        <div class="tab" id="tabBtns">
+          <button class="tablinks" id="defaultProject" onclick="openProject(event, 'project1')">project s1</button>
+          <button class="tablinks" onclick="openProject(event, 'project2')">project 2 dsdasdas</button>
+          <button class="tablinks" id="four4" onclick="openProject(event, 'project3')">project 3</button>
         </div>
         
         <div id="project1" class="tabcontent">
+          <span onclick="closeProject(this)" class="topright">&times</span>
           <h3>Project 1</h3>
           <p>placeholder for my project will add later</p>
         </div>
         
         <div id="project2" class="tabcontent">
+          <span onclick="closeProject(this)" class="topright">&times</span>
           <h3>Project 2</h3>
           <p>placeholder for my project will add later</p> 
           <ul>
@@ -111,9 +113,19 @@
             <li>1</li>
             <li>1</li>
           </ul>
+          <p>description...</p>
+          <p>technologies used...</p>
+          <ol>
+            <li>lore</li>
+            <li>lore</li>
+            <li>lore</li>
+            <li>lore</li>
+            <li>lore</li>
+          </ol>
         </div>
         
         <div id="project3" class="tabcontent">
+          <span onclick="closeProject(this)" class="topright">&times</span>
           <h3>Project 3</h3>
           <p>placeholder for my project will add later</p>
         </div>
