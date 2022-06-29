@@ -4,16 +4,19 @@ console.log('helllloooo console works');
 const openProject = (e, projectName) => {
   let i, tabcontent, tablinks;
   
+  // hide all tabcontent elements
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
   
+  // hide all active tablinks btns
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
   
+  // show current tab, make tablink btn active
   document.getElementById(projectName).style.display = "block";
   e.currentTarget.className += " active";
 }

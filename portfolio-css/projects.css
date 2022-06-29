@@ -1,8 +1,7 @@
-/* .conte {
-  display: flex;
-  justify-content:flex-start
-} */
-
+#projects > p {
+  text-align: center;
+  font-size: 1.2rem;
+}
 
 /* Style the tab */
 .tab {
@@ -14,12 +13,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   /* width: 200px; */
-  /* display: inline-block; */
+  display: inline-block;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: #fbdeea;
+  background-color: #ccc;
   color: #121212;
   float: left;
   outline: none;
@@ -41,7 +40,7 @@
 .tab button.active {
   /* background-color: #ccc; */
   /* text-decoration: overline underline #121212; */
-  background-color: #0073b1;
+  background-color: var(--project-accent);
   color: #F9F6EE;
 }
 
@@ -52,19 +51,20 @@
   border: 1px solid var(--secondary-color);
   border-radius: 3px;
   margin-top: 10px;
+  padding: 24px;
   /* border-top: none; */
   width: 100%;
 }
 
 /* fade in effects */
-.tabcontent {
+/* .tabcontent {
   animation: fadeEffect 1s;
 }
 
 @keyframes fadeEffect {
   from {opacity: 0;}
   to {opacity: 1;}
-}
+} */
 
 /* styling of close button of tab */
 .topright {
@@ -74,3 +74,53 @@
 }
 
 .topright:hover {color: red;}
+
+/* protect tabcontent below */
+.project-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 18px;
+}
+
+.project-btns button {
+  padding: 7px 10px;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  cursor: pointer;
+  border-radius: 3px;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  transition: .3s;
+}
+
+.project-btns button:hover {
+  /* transform: translate(3px, -5px); */
+  background-color: var(--project-accent);
+  /* box-shadow: -3px 5px 5px 1px rgba(128, 128, 128, 0.63); */
+  color: #F9F6EE;
+}
+
+.project-text {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+.project-text p:first-child {
+  text-decoration: overline var(--secondary-color);
+}
+
+#projects img {
+  width: 70%;
+  display: block;
+  margin: 30px auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+#projects .tech-stack {
+  font-weight: bold;
+}
