@@ -307,10 +307,13 @@ footer {
     margin: 10px 14px;
   }
 
+  .project-btns {
+    gap: 10px;
+  }
+
   .project-btns button {
-    padding: 7px 10px;
-    margin: 20px;
-    letter-spacing: 2px;
+    padding: 12px 15px;
+    margin: 10px;
     font-size: 13px;
   }
 
@@ -426,7 +429,7 @@ footer {
   }
 
   .project-btns button {
-    padding: 7px 10px;
+    padding: 10px 14px;
     margin: 0px;
     letter-spacing: 2px;
     font-size: 13px;
