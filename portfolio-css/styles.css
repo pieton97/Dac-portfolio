@@ -535,6 +535,10 @@ footer {
   }
 
   /* project */
+  #projects > p {
+    font-size: 1rem;
+  }
+
   .tab button {
     padding: 6px 8px;
     font-size: 1rem;
