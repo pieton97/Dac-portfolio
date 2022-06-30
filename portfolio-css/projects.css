@@ -6,13 +6,12 @@
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid var(--secondary-color); 
-  border-radius: 3px;
+  /* border: 1px solid var(--secondary-color);  */
+  border: none; 
   background-color: transparent;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* width: 200px; */
   display: inline-block;
 }
 
@@ -27,10 +26,8 @@
   transition: 0.3s;
   font-size: 17px;
   margin: 10px 18px;
-  /* border: 1px solid var(--secondary-color); */
   border: none;
   border-radius: 3px;
-
 }
 
 .tab button:hover {
@@ -86,13 +83,13 @@
 
 .project-btns button {
   padding: 7px 10px;
+  margin: 30px;
   background-color: var(--secondary-color);
   color: var(--main-color);
   cursor: pointer;
   border-radius: 3px;
   letter-spacing: 3px;
   font-size: 14px;
-  font-weight: 600;
   border: none;
   transition: .3s;
 }
@@ -114,7 +111,7 @@
 }
 
 #projects img {
-  width: 70%;
+  width: 80%;
   display: block;
   margin: 30px auto;
   object-fit: cover;

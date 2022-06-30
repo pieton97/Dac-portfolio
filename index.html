@@ -6,15 +6,15 @@
   <title>Dac's Cool Portfolio</title>
 
   <link rel="stylesheet" href="portfolio-css/header.css">
-  <link rel="stylesheet" href="portfolio-css/styles.css">
   <link rel="stylesheet" href="portfolio-css/projects.css">
+  <link rel="stylesheet" href="portfolio-css/styles.css">
 
   <!-- fontawesome file -->
   <link rel="stylesheet" href="css/all.css">  
   <script src="index.js" defer></script>
   <!-- <script src="https://kit.fontawesome.com/086ab87877.js" crossorigin="anonymous"></script> -->
  </head>
- <body class="test11">
+ <body>
  <div class="background-container">
   <!-- background-container is used to style background with animations (add later) -->
   <div class="portfolio-container">
@@ -28,9 +28,9 @@
           <span class="bar"></span>
         </a>
         <ul class="nav-menu">
-          <li><a href="#about">.about</a></li>
-          <li><a href="#projects">.projects</a></li>
-          <li><a href="#contact">.contact</a></li>
+          <li><a href="#about-anchor">.about</a></li>
+          <li><a href="#projects-anchor">.projects</a></li>
+          <li><a href="#contact-anchor">.contact</a></li>
           <button id="color-theme" type="button">Dark Mode</button>
         </ul>
       </nav>
@@ -44,7 +44,7 @@
         <h2>I'm a frontend developer, die hard naruto fan, gamer, and food enthusiast</h2>
         <!-- top section about me -->
         <div class="landing-arrow">
-          <a href="#about">
+          <a href="#about-anchor">
             <i class="fa-solid fa-arrow-down-long fa-beat" style="--fa-animation-duration: 2s;"></i>
           </a>
         </div>
@@ -52,6 +52,7 @@
       
       <hr>
       
+      <a class="anchor" id="about-anchor"></a>
       <section id="about">
         <!-- bottom section about me -->
         <h2 class="text-heading blue-text">ABOUT ME</h2>
@@ -85,6 +86,7 @@
 
       <hr>
 
+      <a class="anchor" id="projects-anchor"></a>
       <section id="projects">
         <h2 class="text-heading blue-text">My Projects</h2>
         <p>Click on the buttons inside the tabbed menu:</p>
@@ -151,7 +153,8 @@
       </section>
   
       <hr>
-  
+
+      <a class="anchor" id="contact-anchor"></a>
       <section id="contact">
         <div class="contact-message">
           <h1 class="blue-text">Let's work together</h1>
