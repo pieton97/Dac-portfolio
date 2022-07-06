@@ -92,8 +92,8 @@
         <p>Click on the buttons inside the tabbed menu:</p>
         
         <div class="tab" id="tabBtns">
-          <button class="tablinks" id="defaultProject" onclick="openProject(event, 'project1')">This Portfolio</button>
-          <button class="tablinks" onclick="openProject(event, 'project2')">project 2 dsdasdas</button>
+          <button class="tablinks" id="defaultProject" onclick="openProject(event, 'project1')">This portfolio</button>
+          <button class="tablinks" onclick="openProject(event, 'project2')">Youtube clone</button>
           <button class="tablinks" onclick="openProject(event, 'project3')">project 3</button>
         </div>
         
@@ -114,6 +114,21 @@
         
         <div id="project2" class="tabcontent">
           <span onclick="closeProject(this)" class="topright">&times</span>
+          <a href="https://pieton97.github.io/youtube-clone/" target="_blank"><img src="project-imgages/youtube clone pic.jpg" alt=""></a>
+          <div class="project-text">
+            <p>Youtube clone</p>
+            <p>Nothing much to say here just a small project to practice grid/flexbox and page layout. The video content are sourced from my youtube feed</p>
+            <div class="tech-stack">Built with: HTML and CSS</div>
+          </div>
+          <div class="project-btns">
+            <button>Visit the site</button>
+            <button>See the code</button>
+            <button>Watch my youtube video</button>
+          </div>
+        </div>
+        
+        <div id="project3" class="tabcontent">
+          <span onclick="closeProject(this)" class="topright">&times</span>
           <h3>Project 2</h3>
           <p>placeholder for my project will add later</p> 
           <ul>
@@ -133,23 +148,6 @@
             <li>lore</li>
           </ol>
         </div>
-        
-        <div id="project3" class="tabcontent">
-          <span onclick="closeProject(this)" class="topright">&times</span>
-          <img src="/project-imgages/portfolio project picture.png" alt="">
-          <div class="project-btns">
-            <button>Visit the site</button>
-            <button>See the code</button>
-            <button>watch my youtube video</button>
-          </div>
-          <div>
-            <h3>Project 1</h3>
-            <p>placeholder for my project will add later</p>
-            <div class="tech-stack">Built with: pure HTML, CSS, JavaScript</div>
-          </div>
-        </div>
-        
-        <!-- mid section about my main projects -->
       </section>
   
       <hr>
@@ -160,7 +158,7 @@
           <h1 class="blue-text">Let's work together</h1>
           <div class="contact-mail">
             <p>Have any questions?</p>
-            <p><a class="mail-link" href="mailto:huyng97@yahoo.com?subject=Hi lets work together!">Click here to send an email</a> or peep my socials out below.</p>
+            <p><a class="mail-link" href="mailto:huyng97@yahoo.com?subject=Hi! lets work together">Click here to send an email</a> or peep my socials out below.</p>
           </div>
           <div class="contact-socials">
             <a href="https://www.youtube.com/" target="_blank"><i id="yt-icon" class="fa-brands fa-youtube"></i></a>

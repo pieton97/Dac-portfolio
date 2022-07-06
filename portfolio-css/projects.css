@@ -118,6 +118,10 @@
   object-position: center;
 }
 
+#projects a {
+  border: 12px red solid;
+}
+
 #projects .tech-stack {
   font-weight: bold;
 }
