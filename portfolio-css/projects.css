@@ -110,16 +110,23 @@
   text-decoration: overline var(--secondary-color);
 }
 
-#projects img {
+#projects .proj-img-container {
   width: 80%;
   display: block;
   margin: 30px auto;
   object-fit: cover;
   object-position: center;
+  transition: all 0.3s;
 }
 
-#projects a {
-  border: 12px red solid;
+#projects .proj-img-container:hover {
+  opacity: 0.7;
+}
+
+#projects img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 #projects .tech-stack {
