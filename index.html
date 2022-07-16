@@ -92,20 +92,38 @@
         <p>Click on the buttons inside the tabbed menu:</p>
         
         <div class="tab" id="tabBtns">
-          <button class="tablinks" id="defaultProject" onclick="openProject(event, 'project1')">This portfolio</button>
-          <button class="tablinks" onclick="openProject(event, 'project2')">Youtube clone</button>
+          <button class="tablinks" id="defaultProject"   onclick="openProject(event, 'recipe')">Recipe-randomizer</button>
+          <button class="tablinks" onclick="openProject(event, 'portfolio')">This portfolio</button>
+          <button class="tablinks" onclick="openProject(event, 'yt-clone')">Youtube clone</button>
           <button class="tablinks" onclick="openProject(event, 'project3')">project 3</button>
         </div>
         
-        <div id="project1" class="tabcontent">
+        <div id="recipe" class="tabcontent">
+          <span onclick="closeProject(this)" class="topright">&times</span>
+          <div class="proj-img-container">
+            <a href="https://pieton97.github.io/recipe-randomizer/" target="_blank"><img src="project-imgages/recipe.png" alt=""></a>
+          </div>
+          <div class="project-text">
+            <p>Recipe randomizer</p>
+            <p>I built this using Edamam API. This randomizer takes in an optional input of anything like ingredients or a specific recipe name. The default result is 3, with 6 if choosing checkbox with more options. This is because the goal of this project is to help you select something and just start cooking, instead of being overwhelm with too many options on what to cook. Website looks great on all devices from desktop to ipads, iphones, or any similar devices.</p>
+            <div class="tech-stack">Built with: HTML, CSS, JavaScript</div>
+          </div>
+          <div class="project-btns">
+            <button>Visit the site</button>
+            <button>See the code</button>
+            <button>Watch my youtube video</button>
+          </div>
+        </div>
+
+        <div id="portfolio" class="tabcontent">
           <span onclick="closeProject(this)" class="topright">&times</span>
           <div class="proj-img-container">
             <a href="https://pieton97.github.io/Dac-portfolio/" target="_blank"><img src="project-imgages\portfolio project picture.png" alt=""></a>
           </div>
           <div class="project-text">
             <p>This portfolio</p>
-            <p>My first 'real' project where I built a portfolio that displays my other projects.</p>
-            <div class="tech-stack">Built with: pure HTML, CSS, JavaScript</div>
+            <p>This is actually my first project where I integrate JavaScript with html and css. The dark mode feature looks normal but it actually saves your preference in local data for when you visit next time. The portfolio looks great on all devices from desktop to ipads, and especially good on mobile phones.</p>
+            <div class="tech-stack">Built with: HTML, CSS, JavaScript</div>
           </div>
           <div class="project-btns">
             <button>Visit the site</button>
@@ -114,7 +132,7 @@
           </div>
         </div>
         
-        <div id="project2" class="tabcontent">
+        <div id="yt-clone" class="tabcontent">
           <span onclick="closeProject(this)" class="topright">&times</span>
           <div class="proj-img-container">
             <a href="https://pieton97.github.io/youtube-clone/" target="_blank"><img src="project-imgages/youtube clone pic.jpg" alt=""></a>
@@ -125,7 +143,7 @@
             <div class="tech-stack">Built with: HTML and CSS</div>
           </div>
           <div class="project-btns">
-            <button">Visit the site</button>
+            <button>Visit the site</button>
             <button>See the code</button>
             <button>Watch my youtube video</button>
           </div>
@@ -184,7 +202,7 @@
     
     <!-- footer section -->
     <footer>
-      <p>&copy Copyright 2022 Dac Nguyen. All rights reserved.</p>
+      <p>Copyright &copy 2022 Dac Nguyen. All rights reserved.</p>
     </footer>
   </div>
  </div>
