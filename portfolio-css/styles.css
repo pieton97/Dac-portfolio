@@ -69,6 +69,10 @@ section {
   color: var(--blue-accent);
 }
 
+a {
+  color: inherit;
+}
+
 a.anchor {
   display: block;
   position: relative;
