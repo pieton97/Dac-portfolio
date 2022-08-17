@@ -21,7 +21,7 @@ Royal Blue (#00539CFF) and Peach (#EEA47FFF)
   --main-color: #F9F6EE;
   --secondary-color: #121212;
   --blue-accent: #0072b1;
-  --project-accent: #dc3d4b;
+  --project-accent: #e68523;
 }
 
 .dark-theme {
@@ -35,9 +35,8 @@ body {
   padding: 0;
   background-color: var(--main-color);
   color: var(--secondary-color);
-  font-family: Arial;
+  font-family: monospace, sans-serif, Arial;
   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  font-family: monospace, sans-serif;
   transition: 0.3s;
 }
 
@@ -47,8 +46,8 @@ body {
 
 .portfolio-container {
   width: 85%;
-  min-width: 480px;
-  max-width: 1600px;
+  min-width: 380px;
+  max-width: 1400px;
   margin: 0 auto;
   /* border: 1px solid red; */
   background-color: transparent;

@@ -81,7 +81,8 @@
   margin-top: 18px;
 }
 
-.project-btns button {
+.project-btns a {
+  text-decoration: none;
   padding: 12px 24px;
   margin: 10px;
   background-color: var(--secondary-color);
@@ -94,7 +95,7 @@
   transition: .3s;
 }
 
-.project-btns button:hover {
+.project-btns a:hover {
   /* transform: translate(3px, -5px); */
   background-color: var(--project-accent);
   /* box-shadow: -3px 5px 5px 1px rgba(128, 128, 128, 0.63); */

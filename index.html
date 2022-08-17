@@ -58,16 +58,16 @@
         <h2 class="text-heading blue-text">ABOUT ME</h2>
         <p>
           <i class="fa-solid fa-quote-left"></i>
-          Your time is limited, so don’t waste it living someone else’s life.
+          Wish not so much to live long as to live well.
           <i class="fa-solid fa-quote-right"></i>
         </p>
         <p>
-          <i class="fa-solid fa-angles-right"></i> Steve Jobs
+          <i class="fa-solid fa-angles-right"></i> Benjamin Franklin
         </p>
 
         <p>Hi, I'm Dac and I'm a self-taught developer. I'm a curious guy who likes to learn about random things and random stuff about anything.</p>
 
-        <p><strong>Why did I decide to code?</strong> Tech is everywhere in the world today and I believe will be more so in the future. Amazing things like AI and VR (virtual reality) are still in its early stages so I want to be part of its growth and innovation. What's a better way to start then by building simple but beautiful websites to display these technologies?</p>
+        <p><strong>Why did I decide to code?</strong> Tech is everywhere in the world today and I believe will be more so in the future. I want to be part of its growth and innovation, so what's a better way to start then by building simple but beautiful websites?</p>
 
         <p><strong>When I'm not coding in front of a computer screen.</strong> I like to watch anime, hit the gym or play some valorant with friends.</p>
 
@@ -76,11 +76,12 @@
           <p><i class="fa-brands fa-html5"></i>HTML</p>
           <p><i class="fa-brands fa-css3-alt"></i>CSS</p>
           <p><i class="fa-brands fa-js-square"></i>JAVASCRIPT</p>
-          <p><i class="fa-brands fa-react"></i>REACT</p>
-          <p><i class="fa-brands fa-bootstrap"></i>BOOTSTRAP</p>
-          <p><i class="fa-brands fa-node"></i>NODE.JS</p>
+          <p><i class="fa-brands fa-react"></i>REACT/Redux</p>
+          <p><i class="fa-brands fa-sass"></i>SASS</p>
           <p><i class="fa-brands fa-git-alt"></i>GIT</p>
           <p><i class="fa-brands fa-github"></i>GITHUB</p>
+          <p><i class="fa-brands fa-bootstrap"></i>BOOTSTRAP</p>
+          <p><i class="fa-brands fa-node"></i>NODE.JS</p>
         </div>
       </section>
 
@@ -92,10 +93,30 @@
         <p>Click on the buttons inside the tabbed menu:</p>
         
         <div class="tab" id="tabBtns">
-          <button class="tablinks" id="defaultProject"   onclick="openProject(event, 'recipe')">Recipe-randomizer</button>
+          <button class="tablinks" id="defaultProject" onclick="openProject(event, 'my-anime-app')">MyAnimeApp</button>
+          <button class="tablinks" onclick="openProject(event, 'recipe')">Recipe randomizer</button>
           <button class="tablinks" onclick="openProject(event, 'portfolio')">This portfolio</button>
           <button class="tablinks" onclick="openProject(event, 'yt-clone')">Youtube clone</button>
-          <button class="tablinks" onclick="openProject(event, 'project3')">project 3</button>
+        </div>
+        
+        <div id="my-anime-app" class="tabcontent">
+          <span onclick="closeProject(this)" class="topright">&times</span>
+          <div class="proj-img-container">
+            <a href="https://pieton97.github.io/My-anime-app/" target="_blank"><img src="project-imgages/anime-app.png" alt=""></a>
+          </div>
+          <div class="project-text">
+            <p>Recipe randomizer</p>
+            <p>I built this using the <a href="https://jikan.moe/" target="_blank">Jikan API</a>. Data is fetched in parallel so load and renders are usually under than a second. You can search by keywords or any of the preset buttons below for anime results. Clicking on an anime will pop up a modal with all of the information about that clicked anime and recommendations. Modals can be easily closed by clicking on the outside. (My List) feature allows user to add any animes to their list and it will save within local storage for their next visit. This website is highly responsive and looks amazing on most devices.</p>
+            <div class="tech-stack">Built with: React</div>
+          </div>
+          <div class="project-btns">
+            <a href="https://pieton97.github.io/My-anime-app/" target="_blank">
+              Visit the site
+            </a>
+            <a href="https://github.com/pieton97/My-anime-app" target="_blank">
+              See the code
+            </a>
+          </div>
         </div>
         
         <div id="recipe" class="tabcontent">
@@ -105,13 +126,16 @@
           </div>
           <div class="project-text">
             <p>Recipe randomizer</p>
-            <p>I built this using <a href="https://www.edamam.com/" target="_blank">Edamam API</a>. This randomizer can takes any input like ingredients or a specific recipe name. The default result is 3, with 6 if choosing checkbox with more options. This is because the goal of this project is to help you select something and just start cooking, instead of being overwhelm with too many options on what to cook. Website looks great on all devices from desktop to ipads, iphones, or any similar devices.</p>
+            <p>I built this using <a href="https://www.edamam.com/" target="_blank">Edamam API</a>. This randomizer can take any input like ingredients or a specific recipe name. The default result is 3, with 6 if choosing checkbox with more options. This is because the goal of this project is to help you select something and just start cooking, instead of being overwhelm with too many options on what to cook. Website looks great on all devices from desktop to ipads, iphones, or any similar devices.</p>
             <div class="tech-stack">Built with: HTML, CSS, JavaScript</div>
           </div>
           <div class="project-btns">
-            <button>Visit the site</button>
-            <button>See the code</button>
-            <button>Watch my youtube video</button>
+            <a href="https://pieton97.github.io/recipe-randomizer/" target="_blank">
+              Visit the site
+            </a>
+            <a href="https://github.com/pieton97/recipe-randomizer" target="_blank">
+              See the code
+            </a>
           </div>
         </div>
 
@@ -126,9 +150,12 @@
             <div class="tech-stack">Built with: HTML, CSS, JavaScript</div>
           </div>
           <div class="project-btns">
-            <button>Visit the site</button>
-            <button>See the code</button>
-            <button>Watch my youtube video</button>
+            <a href="https://pieton97.github.io/Dac-portfolio/" target="_blank">
+              Visit the site
+            </a>
+            <a href="https://github.com/pieton97/Dac-portfolio" target="_blank">
+              See the code
+            </a>
           </div>
         </div>
         
@@ -143,32 +170,13 @@
             <div class="tech-stack">Built with: HTML and CSS</div>
           </div>
           <div class="project-btns">
-            <button>Visit the site</button>
-            <button>See the code</button>
-            <button>Watch my youtube video</button>
+            <a href="https://pieton97.github.io/youtube-clone/" target="_blank">
+              Visit the site
+            </a>
+            <a href="https://github.com/pieton97/youtube-clone" target="_blank">
+              See the code
+            </a>
           </div>
-        </div>
-        
-        <div id="project3" class="tabcontent">
-          <span onclick="closeProject(this)" class="topright">&times</span>
-          <h3>Project 2</h3>
-          <p>placeholder for my project will add later</p> 
-          <ul>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-          </ul>
-          <p>description...</p>
-          <p>technologies used...</p>
-          <ol>
-            <li>lore</li>
-            <li>lore</li>
-            <li>lore</li>
-            <li>lore</li>
-            <li>lore</li>
-          </ol>
         </div>
       </section>
   
