@@ -7,5 +7,3 @@
 - highly mobile responsive
 
 [Live view](https://pieton97.github.io/Dac-portfolio/)
-
-![portfolio img](/project-imgages/portfolio%20project%20picture.png)
