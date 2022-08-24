@@ -1,6 +1,13 @@
+#projects h2 {
+  margin: 0;
+  margin-bottom: 7px;
+}
+
 #projects > p {
   text-align: center;
   font-size: 1.2rem;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 /* Style the tab */
@@ -17,21 +24,21 @@
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: #ccc;
+  background-color: rgb(231, 231, 231);
   color: #121212;
   float: left;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 8px 13px;
   transition: 0.3s;
-  font-size: 17px;
-  margin: 10px 18px;
+  font-size: 15px;
+  margin: 7px 10px;
   border: none;
   border-radius: 3px;
 }
 
 .tab button:hover {
-  background-color: #ddd;
+  background-color: rgb(209, 209, 209);
 }
 
 .tab button.active {
@@ -48,7 +55,7 @@
   border: 1px solid var(--secondary-color);
   border-radius: 3px;
   margin-top: 10px;
-  padding: 24px;
+  padding: 10px 24px;
   /* border-top: none; */
   width: 100%;
 }
@@ -103,12 +110,16 @@
 }
 
 .project-text {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 10px;
+}
+.project-text .description {
+  font-size: 16px;
 }
 
 .project-text p:first-child {
   text-decoration: overline var(--secondary-color);
+  font-weight: bold;
 }
 
 #projects .proj-img-container {

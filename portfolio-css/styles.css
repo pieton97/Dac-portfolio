@@ -21,7 +21,7 @@ Royal Blue (#00539CFF) and Peach (#EEA47FFF)
   --main-color: #F9F6EE;
   --secondary-color: #121212;
   --blue-accent: #0072b1;
-  --project-accent: #e68523;
+  --project-accent: #e4872a;
 }
 
 .dark-theme {
@@ -61,7 +61,6 @@ section {
 .text-heading {
   text-align: center;
   font-size: 2rem;
-  /* background-color: lightblue; */
 }
 
 .blue-text {
@@ -75,7 +74,7 @@ a {
 a.anchor {
   display: block;
   position: relative;
-  top: -11vh;
+  top: -10vh;
   visibility: hidden;
 }
 
@@ -109,7 +108,7 @@ a.anchor {
 
 #about p {
   margin: 3rem auto;
-  font-size: 20px;
+  font-size: 19px;
   /* background-color: red; */
 }
 
@@ -130,6 +129,9 @@ a.anchor {
 .skills-logos i {
   font-size: 3rem;
   display: block;
+}
+#about .skills-logos p {
+  font-size: 16px;
 }
 
 #about .skills-logos p {
@@ -306,15 +308,15 @@ footer {
   /* project */
   .tab button {
     padding: 8px 10px;
-    font-size: 1rem;
-    margin: 10px 14px;
+    font-size: 15px;
+    margin: 7px 10px;
   }
 
   .project-btns {
     gap: 10px;
   }
 
-  .project-btns button {
+  .project-btns a {
     padding: 12px 15px;
     margin: 10px;
     font-size: 13px;
@@ -431,7 +433,7 @@ footer {
     margin-top: 10px;
   }
 
-  .project-btns button {
+  .project-btns a {
     padding: 10px 14px;
     margin: 0px;
     letter-spacing: 2px;
@@ -528,12 +530,15 @@ footer {
   
   /* about */  
   #about p {
-    margin: 3rem auto;
-    font-size: 16px;
+    margin: 2.5rem auto;
+    font-size: 13px;
   }
 
   .skills-logos i {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+  }
+  #about .skills-logos p {
+    font-size: 12px;
   }
 
   #about .skills-logos p {
@@ -542,12 +547,12 @@ footer {
 
   /* project */
   #projects > p {
-    font-size: 1rem;
+    font-size: 13px;
   }
 
   .tab button {
     padding: 6px 8px;
-    font-size: 1rem;
+    font-size: 13px;
   }
 
   .project-btns{
@@ -555,14 +560,18 @@ footer {
     margin-top: 10px;
   }
 
-  .project-btns button {
-    padding: 6px 8px;
-    font-size: 13px;
+  .project-btns a {
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    font-size: 12px;
   }
 
   .project-text {
-    font-size: 1rem;
-    margin: 20px 0;
+    font-size: 15px;
+    margin: 15px 0;
+  }
+  .project-text .description {
+    font-size: 12px;
   }
 
   #projects .proj-img-container {

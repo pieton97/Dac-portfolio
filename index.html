@@ -28,8 +28,8 @@
           <span class="bar"></span>
         </a>
         <ul class="nav-menu">
-          <li><a href="#about-anchor">.about</a></li>
           <li><a href="#projects-anchor">.projects</a></li>
+          <li><a href="#about-anchor">.about</a></li>
           <li><a href="#contact-anchor">.contact</a></li>
           <button id="color-theme" type="button">Dark Mode</button>
         </ul>
@@ -44,12 +44,107 @@
         <h2>I'm a frontend developer, die hard naruto fan, gamer, and food enthusiast</h2>
         <!-- top section about me -->
         <div class="landing-arrow">
-          <a href="#about-anchor">
+          <a href="#projects-anchor">
             <i class="fa-solid fa-arrow-down-long fa-beat" style="--fa-animation-duration: 2s;"></i>
           </a>
         </div>
       </section>
-      
+
+      <hr>
+
+      <a class="anchor" id="projects-anchor"></a>
+      <section id="projects">
+        <h2 class="text-heading blue-text">My Projects</h2>
+        <p>Click on the buttons inside the tabbed menu:</p>
+        
+        <div class="tab" id="tabBtns">
+          <button class="tablinks" id="defaultProject" onclick="openProject(event, 'my-anime-app')">MyAnimeApp</button>
+          <button class="tablinks" onclick="openProject(event, 'recipe')">Recipe randomizer</button>
+          <button class="tablinks" onclick="openProject(event, 'portfolio')">This portfolio</button>
+          <button class="tablinks" onclick="openProject(event, 'yt-clone')">YT front page</button>
+        </div>
+        
+        <div id="my-anime-app" class="tabcontent">
+          <span onclick="closeProject(this)" class="topright">&times</span>
+          <div class="proj-img-container">
+            <a href="https://pieton97.github.io/My-anime-app/" target="_blank"><img src="project-imgages/anime-app.png" alt=""></a>
+          </div>
+          <div class="project-text">
+            <p>MyAnimeApp</p>
+            <p class="description">This React app was made with vanilla JavaScript using ES6 and functional components with hooks. Inlucdes the use of modals, local storage, and pagination on all of fetch endpoints. Data is fetched in parallel so load and renders are usually under than a second. Website is mobile responsive and looks great on most devices.</p>
+            <div class="tech-stack">Built with: React, <a href="https://jikan.moe/" target="_blank">Jikan API</a></div>
+          </div>
+          <div class="project-btns">
+            <a href="https://pieton97.github.io/My-anime-app/" target="_blank">
+              Visit the site
+            </a>
+            <a href="https://github.com/pieton97/My-anime-app" target="_blank">
+              See the code
+            </a>
+          </div>
+        </div>
+        
+        <div id="recipe" class="tabcontent">
+          <span onclick="closeProject(this)" class="topright">&times</span>
+          <div class="proj-img-container">
+            <a href="https://pieton97.github.io/recipe-randomizer/" target="_blank"><img src="project-imgages/recipe.png" alt=""></a>
+          </div>
+          <div class="project-text">
+            <p>Recipe randomizer</p>
+            <p class="description">This randomizer can take any input like ingredients or a specific recipe name and result a list of recipes with information and a list of its ingredients. User can also filter recipe by glutten-free or vegetarian foods. Website is mobile responsive and looks great on most devices.</p>
+            <div class="tech-stack">Built with: HTML, CSS, JavaScript, <a href="https://www.edamam.com/" target="_blank">Edamam API</a></div>
+          </div>
+          <div class="project-btns">
+            <a href="https://pieton97.github.io/recipe-randomizer/" target="_blank">
+              Visit the site
+            </a>
+            <a href="https://github.com/pieton97/recipe-randomizer" target="_blank">
+              See the code
+            </a>
+          </div>
+        </div>
+
+        <div id="portfolio" class="tabcontent">
+          <span onclick="closeProject(this)" class="topright">&times</span>
+          <div class="proj-img-container">
+            <a href="https://pieton97.github.io/Dac-portfolio/" target="_blank"><img src="project-imgages\portfolio project picture.png" alt=""></a>
+          </div>
+          <div class="project-text">
+            <p>This portfolio</p>
+            <p class="description">A simple but clean portfolio with some of my projects, dark/light feature, and use of local storage. Form on the contact page uses FormSubmit so it works without any backend code. The portfolio is mobile responsive and looks great on most devices.</p>
+            <div class="tech-stack">Built with: HTML, CSS, JavaScript</div>
+          </div>
+          <div class="project-btns">
+            <a href="https://pieton97.github.io/Dac-portfolio/" target="_blank">
+              Visit the site
+            </a>
+            <a href="https://github.com/pieton97/Dac-portfolio" target="_blank">
+              See the code
+            </a>
+          </div>
+        </div>
+        
+        <div id="yt-clone" class="tabcontent">
+          <span onclick="closeProject(this)" class="topright">&times</span>
+          <div class="proj-img-container">
+            <a href="https://pieton97.github.io/youtube-clone/" target="_blank"><img src="project-imgages/youtube clone pic.jpg" alt=""></a>
+          </div>
+          <div class="project-text">
+            <p>Youtube front page</p>
+            <p class="description">Nothing much to say here just a small project for me to practice grid/flexbox, effects, and page layout.</p>
+            <div class="tech-stack">Built with: HTML and CSS</div>
+          </div>
+          <div class="project-btns">
+            <a href="https://pieton97.github.io/youtube-clone/" target="_blank">
+              Visit the site
+            </a>
+            <a href="https://github.com/pieton97/youtube-clone" target="_blank">
+              See the code
+            </a>
+          </div>
+        </div>
+      </section>
+
       <hr>
       
       <a class="anchor" id="about-anchor"></a>
@@ -76,7 +171,7 @@
           <p><i class="fa-brands fa-html5"></i>HTML</p>
           <p><i class="fa-brands fa-css3-alt"></i>CSS</p>
           <p><i class="fa-brands fa-js-square"></i>JavaScript</p>
-          <p><i class="fa-brands fa-react"></i>React/Redux</p>
+          <p><i class="fa-brands fa-react"></i>React</p>
           <p><i class="fa-brands fa-sass"></i>Sass</p>
           <p><i class="fa-brands fa-git-alt"></i>Git</p>
           <p><i class="fa-brands fa-github"></i>Github</p>
@@ -85,101 +180,6 @@
         </div>
       </section>
 
-      <hr>
-
-      <a class="anchor" id="projects-anchor"></a>
-      <section id="projects">
-        <h2 class="text-heading blue-text">My Projects</h2>
-        <p>Click on the buttons inside the tabbed menu:</p>
-        
-        <div class="tab" id="tabBtns">
-          <button class="tablinks" id="defaultProject" onclick="openProject(event, 'my-anime-app')">MyAnimeApp</button>
-          <button class="tablinks" onclick="openProject(event, 'recipe')">Recipe randomizer</button>
-          <button class="tablinks" onclick="openProject(event, 'portfolio')">This portfolio</button>
-          <button class="tablinks" onclick="openProject(event, 'yt-clone')">Youtube clone</button>
-        </div>
-        
-        <div id="my-anime-app" class="tabcontent">
-          <span onclick="closeProject(this)" class="topright">&times</span>
-          <div class="proj-img-container">
-            <a href="https://pieton97.github.io/My-anime-app/" target="_blank"><img src="project-imgages/anime-app.png" alt=""></a>
-          </div>
-          <div class="project-text">
-            <p>MyAnimeApp</p>
-            <p>I built this using the <a href="https://jikan.moe/" target="_blank">Jikan API</a>. Data is fetched in parallel so load and renders are usually under than a second. You can search by keywords or any of the preset buttons below for anime results. Clicking on an anime will pop up a modal with all of the information about that clicked anime and recommendations. Modals can be easily closed by clicking on the outside. (My List) feature allows user to add any animes to their list and it will save within local storage for their next visit. This website is highly responsive and looks amazing on most devices.</p>
-            <div class="tech-stack">Built with: React</div>
-          </div>
-          <div class="project-btns">
-            <a href="https://pieton97.github.io/My-anime-app/" target="_blank">
-              Visit the site
-            </a>
-            <a href="https://github.com/pieton97/My-anime-app" target="_blank">
-              See the code
-            </a>
-          </div>
-        </div>
-        
-        <div id="recipe" class="tabcontent">
-          <span onclick="closeProject(this)" class="topright">&times</span>
-          <div class="proj-img-container">
-            <a href="https://pieton97.github.io/recipe-randomizer/" target="_blank"><img src="project-imgages/recipe.png" alt=""></a>
-          </div>
-          <div class="project-text">
-            <p>Recipe randomizer</p>
-            <p>I built this using <a href="https://www.edamam.com/" target="_blank">Edamam API</a>. This randomizer can take any input like ingredients or a specific recipe name. The default result is 3, with 6 if choosing checkbox with more options. This is because the goal of this project is to help you select something and just start cooking, instead of being overwhelm with too many options on what to cook. Website looks great on all devices from desktop to ipads, iphones, or any similar devices.</p>
-            <div class="tech-stack">Built with: HTML, CSS, JavaScript</div>
-          </div>
-          <div class="project-btns">
-            <a href="https://pieton97.github.io/recipe-randomizer/" target="_blank">
-              Visit the site
-            </a>
-            <a href="https://github.com/pieton97/recipe-randomizer" target="_blank">
-              See the code
-            </a>
-          </div>
-        </div>
-
-        <div id="portfolio" class="tabcontent">
-          <span onclick="closeProject(this)" class="topright">&times</span>
-          <div class="proj-img-container">
-            <a href="https://pieton97.github.io/Dac-portfolio/" target="_blank"><img src="project-imgages\portfolio project picture.png" alt=""></a>
-          </div>
-          <div class="project-text">
-            <p>This portfolio</p>
-            <p>This is actually my first project where I integrate JavaScript with html and css. The dark mode feature saves user preference for when user reloads/revisits. Form on the contact page uses FormSubmit so it works without any backend code. The portfolio looks great on all devices from desktop to ipads, and especially good on mobile phones.</p>
-            <div class="tech-stack">Built with: HTML, CSS, JavaScript</div>
-          </div>
-          <div class="project-btns">
-            <a href="https://pieton97.github.io/Dac-portfolio/" target="_blank">
-              Visit the site
-            </a>
-            <a href="https://github.com/pieton97/Dac-portfolio" target="_blank">
-              See the code
-            </a>
-          </div>
-        </div>
-        
-        <div id="yt-clone" class="tabcontent">
-          <span onclick="closeProject(this)" class="topright">&times</span>
-          <div class="proj-img-container">
-            <a href="https://pieton97.github.io/youtube-clone/" target="_blank"><img src="project-imgages/youtube clone pic.jpg" alt=""></a>
-          </div>
-          <div class="project-text">
-            <p>Youtube clone</p>
-            <p>Nothing much to say here just a small project to practice grid/flexbox and page layout. The video content are sourced from my youtube feed.</p>
-            <div class="tech-stack">Built with: HTML and CSS</div>
-          </div>
-          <div class="project-btns">
-            <a href="https://pieton97.github.io/youtube-clone/" target="_blank">
-              Visit the site
-            </a>
-            <a href="https://github.com/pieton97/youtube-clone" target="_blank">
-              See the code
-            </a>
-          </div>
-        </div>
-      </section>
-  
       <hr>
 
       <a class="anchor" id="contact-anchor"></a>
@@ -191,8 +191,9 @@
             <p><a class="mail-link" href="mailto:huyng97@yahoo.com?subject=Hi! lets work together">Click here to send an email</a> or peep my socials out below.</p>
           </div>
           <div class="contact-socials">
-            <a href="https://www.youtube.com/" target="_blank"><i id="yt-icon" class="fa-brands fa-youtube"></i></a>
+            <!-- <a href="https://www.youtube.com/" target="_blank"><i id="yt-icon" class="fa-brands fa-youtube"></i></a> -->
             <a href="https://github.com/pieton97" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://codepen.io/pieton" target="_blank"><i class="fa-brands fa-codepen"></i></a>
           </div>
         </div>
 
