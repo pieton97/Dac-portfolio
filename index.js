@@ -60,10 +60,10 @@ colorThemeBtn.addEventListener('click', () => {
   document.body.classList.toggle("dark-theme");
   if (colorThemeBtn.innerHTML === "Dark Mode") {
     colorThemeBtn.innerHTML = "Light Mode";
-    localStorage.setItem("theme", "Light");
+    localStorage.setItem("theme", "Dark");
   } else {
     colorThemeBtn.innerHTML = "Dark Mode";
-    localStorage.setItem("theme", "Dark");
+    localStorage.setItem("theme", "Light");
   }
-  console.log('event:', colorThemeBtn.innerHTML, localStorage.getItem('theme'));
+  console.log('event:', colorThemeBtn.innerHTML, "stored:",localStorage.getItem('theme'));
 });
