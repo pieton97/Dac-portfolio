@@ -547,12 +547,12 @@ footer {
 
   /* project */
   #projects > p {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .tab button {
     padding: 6px 8px;
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .project-btns{
@@ -567,7 +567,7 @@ footer {
   }
 
   .project-text {
-    font-size: 15px;
+    font-size: 14px;
     margin: 15px 0;
   }
   .project-text .description {
