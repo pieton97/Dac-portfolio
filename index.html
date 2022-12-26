@@ -58,12 +58,33 @@
         <p>Click on the buttons inside the tabbed menu:</p>
         
         <div class="tab" id="tabBtns">
-          <button class="tablinks" id="defaultProject" onclick="openProject(event, 'my-anime-app')">MyAnimeApp</button>
+          <button class="tablinks" id="defaultProject" onclick="openProject(event, 'ecom')">Ecommerce website</button>
+          <button class="tablinks" onclick="openProject(event, 'my-anime-app')">MyAnimeApp</button>
           <button class="tablinks" onclick="openProject(event, 'recipe')">Recipe shuffler</button>
           <button class="tablinks" onclick="openProject(event, 'portfolio')">This portfolio</button>
           <button class="tablinks" onclick="openProject(event, 'yt-clone')">YT front page</button>
         </div>
         
+        <div id="ecom" class="tabcontent">
+          <span onclick="closeProject(this)" class="topright">&times</span>
+          <div class="proj-img-container">
+            <a href="https://cookies-ecommerce.herokuapp.com/pages/homepage.php" target="_blank"><img src="project-imgages/cookies-ecom-project.png" alt=""></a>
+          </div>
+          <div class="project-text">
+            <p>Ecommerce Website</p>
+            <p class="description">A fullstack ecommerce app for sweets lovers. Simple account registration, cart/checkout process. Admin board to manage/edit products.</p>
+            <div class="tech-stack">Built with: php, sql, html, css, js, hosted on heroku</div>
+          </div>
+          <div class="project-btns">
+            <a href="https://cookies-ecommerce.herokuapp.com/pages/homepage.php" target="_blank">
+              Visit the site
+            </a>
+            <a href="https://github.com/pieton97/Brimstone-Ecommerce" target="_blank">
+              See the code
+            </a>
+          </div>
+        </div>
+
         <div id="my-anime-app" class="tabcontent">
           <span onclick="closeProject(this)" class="topright">&times</span>
           <div class="proj-img-container">
