@@ -8,6 +8,6 @@
 - form uses formsubmit for easy messaging
 - highly mobile responsive
 
-[Live view](https://pieton97.github.io/Dac-portfolio/)
-[![project picture](/project-imgages/portfolio%20project%20picture.png)](https://pieton97.github.io/Dac-portfolio/)
+[Live view](https://dac-nguyen.com/)
+[![project picture](/project-imgages/portfolio%20project%20picture.png)](https://dac-nguyen.com/)
 
