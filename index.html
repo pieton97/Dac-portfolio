@@ -1,244 +1,257 @@
 <!doctype html>
 <html lang="en">
- <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dac's Cool Portfolio</title>
 
-  <link rel="stylesheet" href="portfolio-css/header.css">
-  <link rel="stylesheet" href="portfolio-css/projects.css">
-  <link rel="stylesheet" href="portfolio-css/styles.css">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dac's Cool Portfolio</title>
 
-  <!-- fontawesome file -->
-  <link rel="stylesheet" href="css/all.css">  
-  <script src="index.js" defer></script>
-  <!-- <script src="https://kit.fontawesome.com/086ab87877.js" crossorigin="anonymous"></script> -->
- </head>
- <body>
- <div class="background-container">
-  <!-- background-container is used to style background with animations (add later) -->
-  <div class="portfolio-container">
-    <header>
-      <!-- this is where my nav bar, heading, logo etc will go -->
-      <nav class="navbar">
-        <p><a href="#">dac.nguyen</a></p>
-        <a href="#dead-link" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <ul class="nav-menu">
-          <li><a href="#projects-anchor">.projects</a></li>
-          <li><a href="#about-anchor">.about</a></li>
-          <li><a href="#contact-anchor">.contact</a></li>
-          <button id="color-theme" type="button">Dark Mode</button>
-        </ul>
-      </nav>
-    </header>
-    
-    <!-- change hr style like height 3px, background color, etc -->
-    <!-- <i class="fa-solid fa-power-off"></i>  -->
-    <main>
-      <section id="landing-front">
-				<div>
-					<h2>Hello there, I'm Dac &#x270C;</h2>
-					<h2>I'm a &#60;&#47;frontend developer&gt;</h2>
-					<p>I'm a developer with experience in many different languages, frameworks, and technologies. I'm always looking for new challenges to tackle.</p>
-					<div>icons</div>
-				</div>
-				<div>
-					<img src="" alt="">
-				</div>
-      </section>
+	<link rel="stylesheet" href="portfolio-css/header.css">
+	<link rel="stylesheet" href="portfolio-css/projects.css">
+	<link rel="stylesheet" href="portfolio-css/styles.css">
 
-      <hr>
+	<!-- fontawesome file -->
+	<link rel="stylesheet" href="css/all.css">
+	<script src="index.js" defer></script>
+	<!-- <script src="https://kit.fontawesome.com/086ab87877.js" crossorigin="anonymous"></script> -->
+</head>
 
-      <a class="anchor" id="projects-anchor"></a>
-      <section id="projects">
-        <h2 class="text-heading blue-text">My Projects</h2>
-        <p>Click on the buttons inside the tabbed menu:</p>
-        
-        <div class="tab" id="tabBtns">
-          <button class="tablinks" id="defaultProject" onclick="openProject(event, 'ecom')">Ecommerce website</button>
-          <button class="tablinks" onclick="openProject(event, 'my-anime-app')">MyAnimeApp</button>
-          <button class="tablinks" onclick="openProject(event, 'recipe')">Recipe shuffler</button>
-          <button class="tablinks" onclick="openProject(event, 'portfolio')">This portfolio</button>
-          <button class="tablinks" onclick="openProject(event, 'yt-clone')">YT front page</button>
-        </div>
-        
-        <div id="ecom" class="tabcontent">
-          <span onclick="closeProject(this)" class="topright">&times</span>
-          <div class="proj-img-container">
-            <a href="https://cookies-ecommerce.herokuapp.com/pages/homepage.php" target="_blank"><img src="project-imgages/cookies-ecom-project.png" alt=""></a>
-          </div>
-          <div class="project-text">
-            <p>Ecommerce Website</p>
-            <p class="description">A fullstack ecommerce app for sweets lovers. Simple account registration, cart/checkout process. Admin board to manage/edit products.</p>
-            <div class="tech-stack">Built with: php, sql, html/css, js, hosted on heroku</div>
-          </div>
-          <div class="project-btns">
-            <a href="https://cookies-ecommerce.herokuapp.com/pages/homepage.php" target="_blank">
-              Visit the site
-            </a>
-            <a href="https://github.com/pieton97/Brimstone-Ecommerce" target="_blank">
-              See the code
-            </a>
-          </div>
-        </div>
+<body>
+	<div class="background-container">
+		<!-- background-container is used to style background with animations (add later) -->
+		<div class="portfolio-container">
+			<header>
+				<nav class="navbar">
+					<p><a href="#">dac.nguyen</a></p>
+					<a href="#dead-link" class="toggle-button">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</a>
+					<ul class="nav-menu">
+						<li><a href="#projects-anchor">.projects</a></li>
+						<li><a href="#about-anchor">.about</a></li>
+						<li><a href="#contact-anchor">.contact</a></li>
+						<!-- <button id="color-theme" type="button">Dark Mode</button> -->
+					</ul>
+				</nav>
+			</header>
 
-        <div id="my-anime-app" class="tabcontent">
-          <span onclick="closeProject(this)" class="topright">&times</span>
-          <div class="proj-img-container">
-            <a href="https://pieton97.github.io/My-anime-app/" target="_blank"><img src="project-imgages/anime-app.png" alt=""></a>
-          </div>
-          <div class="project-text">
-            <p>MyAnimeApp</p>
-            <p class="description">This React app was made with vanilla JavaScript using ES6 and functional components with hooks. Inlucdes the use of modals, local storage, and pagination on all of fetch endpoints. Data is fetched in parallel so load and renders are usually under than a second. Website is mobile responsive and looks great on any device.</p>
-            <div class="tech-stack">Built with: React, <a href="https://jikan.moe/" target="_blank">Jikan API</a></div>
-          </div>
-          <div class="project-btns">
-            <a href="https://pieton97.github.io/My-anime-app/" target="_blank">
-              Visit the site
-            </a>
-            <a href="https://github.com/pieton97/My-anime-app" target="_blank">
-              See the code
-            </a>
-          </div>
-        </div>
-        
-        <div id="recipe" class="tabcontent">
-          <span onclick="closeProject(this)" class="topright">&times</span>
-          <div class="proj-img-container">
-            <a href="https://pieton97.github.io/recipe-randomizer/" target="_blank"><img src="project-imgages/recipe.png" alt=""></a>
-          </div>
-          <div class="project-text">
-            <p>Recipe shuffler</p>
-            <p class="description">This randomizer can take any input like ingredients or a specific recipe name and result a list of recipes with information and a list of its ingredients. User can also filter recipe by glutten-free or vegetarian foods. Website is mobile responsive and looks great on any device.</p>
-            <div class="tech-stack">Built with: HTML, CSS, JavaScript, <a href="https://www.edamam.com/" target="_blank">Edamam API</a></div>
-          </div>
-          <div class="project-btns">
-            <a href="https://pieton97.github.io/recipe-randomizer/" target="_blank">
-              Visit the site
-            </a>
-            <a href="https://github.com/pieton97/recipe-randomizer" target="_blank">
-              See the code
-            </a>
-          </div>
-        </div>
+			<main>
+				<section id="landing-front" class="flex-1">
+					<div>
+						<p>Hello there, I'm Dac &#x270C;</p>
+						<p>I'm a <span>&#60;&#47;frontend developer&gt;</span></p>
+						<p>I'm a developer with experience in many different languages, frameworks, and technologies. I'm always
+							looking for new challenges to tackle.</p>
+						<div>icons</div>
+					</div>
+					<div>
+						<img src="project-imgages/templogo.png" alt="">
+					</div>
+				</section>
 
-        <div id="portfolio" class="tabcontent">
-          <span onclick="closeProject(this)" class="topright">&times</span>
-          <div class="proj-img-container">
-            <a href="https://pieton97.github.io/Dac-portfolio/" target="_blank"><img src="project-imgages\portfolio project picture.png" alt=""></a>
-          </div>
-          <div class="project-text">
-            <p>This portfolio</p>
-            <p class="description">A simple but clean portfolio with some of my projects, dark/light feature, and use of local storage. Form on the contact page uses FormSubmit so it works without any backend code. The portfolio is mobile responsive and looks great on any device.</p>
-            <div class="tech-stack">Built with: HTML, CSS, JavaScript</div>
-          </div>
-          <div class="project-btns">
-            <a href="https://pieton97.github.io/Dac-portfolio/" target="_blank">
-              Visit the site
-            </a>
-            <a href="https://github.com/pieton97/Dac-portfolio" target="_blank">
-              See the code
-            </a>
-          </div>
-        </div>
-        
-        <div id="yt-clone" class="tabcontent">
-          <span onclick="closeProject(this)" class="topright">&times</span>
-          <div class="proj-img-container">
-            <a href="https://pieton97.github.io/youtube-clone/" target="_blank"><img src="project-imgages/youtube clone pic.jpg" alt=""></a>
-          </div>
-          <div class="project-text">
-            <p>Youtube front page</p>
-            <p class="description">Nothing much to say here just a small project for me to practice grid/flexbox, effects, and page layout.</p>
-            <div class="tech-stack">Built with: HTML and CSS</div>
-          </div>
-          <div class="project-btns">
-            <a href="https://pieton97.github.io/youtube-clone/" target="_blank">
-              Visit the site
-            </a>
-            <a href="https://github.com/pieton97/youtube-clone" target="_blank">
-              See the code
-            </a>
-          </div>
-        </div>
-      </section>
+				<a class="anchor" id="projects-anchor"></a>
+				<section id="projects">
+					<h2 class="text-heading blue-text">My Projects</h2>
+					<p>Click on the buttons inside the tabbed menu:</p>
 
-      <hr>
-      
-      <a class="anchor" id="about-anchor"></a>
-      <section id="about">
-        <!-- bottom section about me -->
-        <h2 class="text-heading blue-text">ABOUT ME</h2>
-        <p>
-          <i class="fa-solid fa-quote-left"></i>
-          Tell me and I forget. Teach me and I remember. Involve me and I learn.
-          <i class="fa-solid fa-quote-right"></i>
-        </p>
-        <p>
-          <i class="fa-solid fa-angles-right"></i> Benjamin Franklin
-        </p>
+					<div class="tab" id="tabBtns">
+						<button class="tablinks" id="defaultProject" onclick="openProject(event, 'ecom')">Ecommerce website</button>
+						<button class="tablinks" onclick="openProject(event, 'my-anime-app')">MyAnimeApp</button>
+						<button class="tablinks" onclick="openProject(event, 'recipe')">Recipe shuffler</button>
+						<button class="tablinks" onclick="openProject(event, 'portfolio')">This portfolio</button>
+						<button class="tablinks" onclick="openProject(event, 'yt-clone')">YT front page</button>
+					</div>
 
-        <p>Hi, I'm Dac and I'm a self-taught developer. I'm a curious guy who likes to learn about random things and random stuff about anything.</p>
+					<div id="ecom" class="tabcontent">
+						<span onclick="closeProject(this)" class="topright">&times</span>
+						<div class="proj-img-container">
+							<a href="https://cookies-ecommerce.herokuapp.com/pages/homepage.php" target="_blank"><img
+									src="project-imgages/cookies-ecom-project.png" alt=""></a>
+						</div>
+						<div class="project-text">
+							<p>Ecommerce Website</p>
+							<p class="description">A fullstack ecommerce app for sweets lovers. Simple account registration,
+								cart/checkout process. Admin board to manage/edit products.</p>
+							<div class="tech-stack">Built with: php, sql, html/css, js, hosted on heroku</div>
+						</div>
+						<div class="project-btns">
+							<a href="https://cookies-ecommerce.herokuapp.com/pages/homepage.php" target="_blank">
+								Visit the site
+							</a>
+							<a href="https://github.com/pieton97/Brimstone-Ecommerce" target="_blank">
+								See the code
+							</a>
+						</div>
+					</div>
 
-        <p><strong>Why did I decide to code?</strong> Tech is everywhere in the world today and I believe will be more so in the future. I want to be part of its growth and innovation, so what's a better way to start than by building simple but beautiful websites?</p>
+					<div id="my-anime-app" class="tabcontent">
+						<span onclick="closeProject(this)" class="topright">&times</span>
+						<div class="proj-img-container">
+							<a href="https://pieton97.github.io/My-anime-app/" target="_blank"><img
+									src="project-imgages/anime-app.png" alt=""></a>
+						</div>
+						<div class="project-text">
+							<p>MyAnimeApp</p>
+							<p class="description">This React app was made with vanilla JavaScript using ES6 and functional components
+								with hooks. Inlucdes the use of modals, local storage, and pagination on all of fetch endpoints. Data is
+								fetched in parallel so load and renders are usually under than a second. Website is mobile responsive
+								and looks great on any device.</p>
+							<div class="tech-stack">Built with: React, <a href="https://jikan.moe/" target="_blank">Jikan API</a>
+							</div>
+						</div>
+						<div class="project-btns">
+							<a href="https://pieton97.github.io/My-anime-app/" target="_blank">
+								Visit the site
+							</a>
+							<a href="https://github.com/pieton97/My-anime-app" target="_blank">
+								See the code
+							</a>
+						</div>
+					</div>
 
-        <p><strong>When I'm not coding in front of a computer screen.</strong> I like to watch anime, hit the gym or play some valorant with friends.</p>
+					<div id="recipe" class="tabcontent">
+						<span onclick="closeProject(this)" class="topright">&times</span>
+						<div class="proj-img-container">
+							<a href="https://pieton97.github.io/recipe-randomizer/" target="_blank"><img
+									src="project-imgages/recipe.png" alt=""></a>
+						</div>
+						<div class="project-text">
+							<p>Recipe shuffler</p>
+							<p class="description">This randomizer can take any input like ingredients or a specific recipe name and
+								result a list of recipes with information and a list of its ingredients. User can also filter recipe by
+								glutten-free or vegetarian foods. Website is mobile responsive and looks great on any device.</p>
+							<div class="tech-stack">Built with: HTML, CSS, JavaScript, <a href="https://www.edamam.com/"
+									target="_blank">Edamam API</a></div>
+						</div>
+						<div class="project-btns">
+							<a href="https://pieton97.github.io/recipe-randomizer/" target="_blank">
+								Visit the site
+							</a>
+							<a href="https://github.com/pieton97/recipe-randomizer" target="_blank">
+								See the code
+							</a>
+						</div>
+					</div>
 
-        <h2 class="text-heading blue-text">SKILLS</h2>
-        <div class="skills-logos">
-          <p><i class="fa-brands fa-html5"></i>HTML</p>
-          <p><i class="fa-brands fa-css3-alt"></i>CSS</p>
-          <p><i class="fa-brands fa-js-square"></i>JavaScript</p>
-          <p><i class="fa-brands fa-react"></i>React</p>
-          <p><i class="fa-brands fa-git-alt"></i>Git</p>
-          <p><i class="fa-brands fa-github"></i>Github</p>
-          <p><i class="fa-brands fa-bootstrap"></i>Bootstrap</p>
-          <p><i class="fa-brands fa-php"></i>Php</p>
-          <p><i class="fa-solid fa-database"></i>Light Sql</p>
-        </div>
-      </section>
+					<div id="portfolio" class="tabcontent">
+						<span onclick="closeProject(this)" class="topright">&times</span>
+						<div class="proj-img-container">
+							<a href="https://pieton97.github.io/Dac-portfolio/" target="_blank"><img
+									src="project-imgages\portfolio project picture.png" alt=""></a>
+						</div>
+						<div class="project-text">
+							<p>This portfolio</p>
+							<p class="description">A simple but clean portfolio with some of my projects, dark/light feature, and use
+								of local storage. Form on the contact page uses FormSubmit so it works without any backend code. The
+								portfolio is mobile responsive and looks great on any device.</p>
+							<div class="tech-stack">Built with: HTML, CSS, JavaScript</div>
+						</div>
+						<div class="project-btns">
+							<a href="https://pieton97.github.io/Dac-portfolio/" target="_blank">
+								Visit the site
+							</a>
+							<a href="https://github.com/pieton97/Dac-portfolio" target="_blank">
+								See the code
+							</a>
+						</div>
+					</div>
 
-      <hr>
+					<div id="yt-clone" class="tabcontent">
+						<span onclick="closeProject(this)" class="topright">&times</span>
+						<div class="proj-img-container">
+							<a href="https://pieton97.github.io/youtube-clone/" target="_blank"><img
+									src="project-imgages/youtube clone pic.jpg" alt=""></a>
+						</div>
+						<div class="project-text">
+							<p>Youtube front page</p>
+							<p class="description">Nothing much to say here just a small project for me to practice grid/flexbox,
+								effects, and page layout.</p>
+							<div class="tech-stack">Built with: HTML and CSS</div>
+						</div>
+						<div class="project-btns">
+							<a href="https://pieton97.github.io/youtube-clone/" target="_blank">
+								Visit the site
+							</a>
+							<a href="https://github.com/pieton97/youtube-clone" target="_blank">
+								See the code
+							</a>
+						</div>
+					</div>
+				</section>
 
-      <a class="anchor" id="contact-anchor"></a>
-      <section id="contact">
-        <div class="contact-message">
-          <h1 class="blue-text">Let's work together</h1>
-          <div class="contact-mail">
-            <p>Have any questions?</p>
-            <p><a class="mail-link" href="mailto:dacng4108@gmail.com?subject=Hi! lets work together">Click here to send an email</a> or peep my socials out below.</p>
-          </div>
-          <div class="contact-socials">
-            <!-- <a href="https://www.youtube.com/" target="_blank"><i id="yt-icon" class="fa-brands fa-youtube"></i></a> -->
-            <a href="https://github.com/pieton97" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/dac-nguyen-734940185" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://codepen.io/pieton" target="_blank"><i class="fa-brands fa-codepen"></i></a>
-          </div>
-        </div>
+				<a class="anchor" id="about-anchor"></a>
+				<section id="about">
+					<!-- bottom section about me -->
+					<h2 class="text-heading blue-text">ABOUT ME</h2>
+					<p>
+						<i class="fa-solid fa-quote-left"></i>
+						Tell me and I forget. Teach me and I remember. Involve me and I learn.
+						<i class="fa-solid fa-quote-right"></i>
+					</p>
+					<p>
+						<i class="fa-solid fa-angles-right"></i> Benjamin Franklin
+					</p>
 
-        <form action="https://formsubmit.co/05455006b6543bade9f2c33097a7d876" method="POST" target="_blank">
-          <input type="text" name="name" placeholder="Name" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <textarea name="body" id="" cols="30" rows="5" placeholder="Message" required></textarea>
-          <button type="submit">SEND</button>
-        </form>
-        <!-- bottom section, contact me form -->
-      </section>
-    </main>
-    
-    <hr>
-    
-    <!-- footer section -->
-    <footer>
-      <p>Copyright &copy 2022 Dac Nguyen. All rights reserved.</p>
-    </footer>
-  </div>
- </div>
+					<p>Hi, I'm Dac and I'm a self-taught developer. I'm a curious guy who likes to learn about random things and
+						random stuff about anything.</p>
+					<p><strong>Why did I decide to code?</strong> Tech is everywhere in the world today and I believe will be more
+						so in the future. I want to be part of its growth and innovation, so what's a better way to start than by
+						building simple but beautiful websites?</p>
+					<p><strong>When I'm not coding in front of a computer screen.</strong> I like to watch anime, hit the gym or
+						play some valorant with friends.</p>
 
-  
- </body>
+					<h2 class="text-heading blue-text">SKILLS</h2>
+					<div class="skills-logos">
+						<p><i class="fa-brands fa-html5"></i>HTML</p>
+						<p><i class="fa-brands fa-css3-alt"></i>CSS</p>
+						<p><i class="fa-brands fa-js-square"></i>JavaScript</p>
+						<p><i class="fa-brands fa-react"></i>React</p>
+						<p><i class="fa-brands fa-git-alt"></i>Git</p>
+						<p><i class="fa-brands fa-github"></i>Github</p>
+						<p><i class="fa-brands fa-bootstrap"></i>Bootstrap</p>
+						<p><i class="fa-brands fa-php"></i>Php</p>
+						<p><i class="fa-solid fa-database"></i>Light Sql</p>
+					</div>
+				</section>
+
+				<a class="anchor" id="contact-anchor"></a>
+				<section id="contact">
+					<div class="contact-message">
+						<h1 class="blue-text">Let's work together</h1>
+						<div class="contact-mail">
+							<p>Have any questions?</p>
+							<p><a class="mail-link" href="mailto:dacng4108@gmail.com?subject=Hi! lets work together">Click here to
+									send an email</a> or peep my socials out below.</p>
+						</div>
+						<div class="contact-socials">
+							<!-- <a href="https://www.youtube.com/" target="_blank"><i id="yt-icon" class="fa-brands fa-youtube"></i></a> -->
+							<a href="https://github.com/pieton97" target="_blank"><i class="fa-brands fa-github"></i></a>
+							<a href="https://www.linkedin.com/in/dac-nguyen-734940185" target="_blank"><i
+									class="fa-brands fa-linkedin"></i></a>
+							<a href="https://codepen.io/pieton" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+						</div>
+					</div>
+
+					<form action="https://formsubmit.co/05455006b6543bade9f2c33097a7d876" method="POST" target="_blank">
+						<input type="text" name="name" placeholder="Name" required>
+						<input type="email" name="email" placeholder="Email" required>
+						<textarea name="body" id="" cols="30" rows="5" placeholder="Message" required></textarea>
+						<button type="submit">SEND</button>
+					</form>
+					<!-- bottom section, contact me form -->
+				</section>
+			</main>
+
+			<!-- footer section -->
+			<footer>
+				<p>Copyright &copy 2022 Dac Nguyen. All rights reserved.</p>
+			</footer>
+		</div>
+	</div>
+
+
+</body>
+
 </html>

@@ -1,26 +1,18 @@
 *, *::before, *::after {
   box-sizing: border-box;
+	margin: 0;
+  padding: 0;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   * {
     scroll-behavior: smooth;
   }
 }
-/* orig colors
-~black: #000033     (secondary)
-~bonewhite: #F9F6EE (main)
-
-others:
-Royal Blue (#00539CFF) and Peach (#EEA47FFF)
-#cd5c5c
-#b38c8f
-*/
-
 :root {
-  --main-color: #F9F6EE;
-  --secondary-color: #121212;
-  --blue-accent: #0072b1;
+  --main-color: #FFFFFF;
+  --secondary-color: #000000;
+	--light-gray: #717171;
+  --blue-accent: #2275C1;
   --project-accent: #e4872a;
 }
 
@@ -31,8 +23,6 @@ Royal Blue (#00539CFF) and Peach (#EEA47FFF)
 
 /* general css */
 body {
-  margin: 0;
-  padding: 0;
   background-color: var(--main-color);
   color: var(--secondary-color);
   font-family: monospace, sans-serif, Arial;
@@ -46,15 +36,16 @@ body {
 .portfolio-container {
   width: 85%;
   min-width: 380px;
-  max-width: 1400px;
+  /* max-width: 1400px; */
   margin: 0 auto;
   /* border: 1px solid red; */
   background-color: transparent;
 }
 
 section {
-  width: 90%;
-  margin: 80px auto;
+  width: 100%;
+	/* background-color: lightblue; */
+  /* margin: 80px auto; */
 }
 
 .text-heading {
@@ -80,7 +71,7 @@ a.anchor {
 /* landing front page */
 #landing-front {
   font-size: 40px;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0;
   padding: 10%;
   display: flex;

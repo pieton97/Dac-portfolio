@@ -13,20 +13,25 @@ header {
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  /* justify-content: space-between; */
   align-items: center;
   position: relative;
   background-color: #121212;
   color: #F9F6EE;
+	padding: 0 250px;
 }
 
 nav p {
-  width: 40%;
+  /* width: 40%; */
+	/* background-color: red; */
+	margin-right: auto;
 }
 
 .nav-menu {
   font-size: 1.5rem;
-  width: 40%;
+  /* width: 40%; */
+	/* background-color: orange; */
+	gap: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -37,16 +42,15 @@ header a {
   text-decoration: none;
   color: inherit;
 }
-
 nav ul li {
   list-style: none;
 }
 
-nav button {
+/* nav button {
   font-size: 1rem;
   font-weight: 500;
   padding: 10px;
-}
+} */
 
 /* menu responsive on smaller screen */
 nav ul {
