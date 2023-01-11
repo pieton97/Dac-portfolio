@@ -28,39 +28,31 @@ body {
   font-family: monospace, sans-serif, Arial;
   transition: 0.3s;
 }
-
-.background-container {
-  width: 100%;
-}
-
 .portfolio-container {
-  width: 85%;
+  width: 100%;
   min-width: 380px;
   /* max-width: 1400px; */
   margin: 0 auto;
   /* border: 1px solid red; */
   background-color: transparent;
 }
-
 section {
-  width: 100%;
+  width: 85%;
+	margin: 10px auto;
 	/* background-color: lightblue; */
   /* margin: 80px auto; */
 }
 
 .text-heading {
-  text-align: center;
+  /* text-align: center; */
   font-size: 2rem;
 }
-
 .blue-text {
   color: var(--blue-accent);
 }
-
 a {
   color: inherit;
 }
-
 a.anchor {
   display: block;
   position: relative;
@@ -68,85 +60,88 @@ a.anchor {
   visibility: hidden;
 }
 
+.flex-1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+}
+.flex-2 {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+}
+.flex-half {
+	flex: 1;
+}
+
 /* landing front page */
 #landing-front {
-  font-size: 40px;
+  font-size: 1.5rem;
   /* height: 100vh; */
-  margin: 0;
-  padding: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
+  margin: 10px auto;
+  /* padding: 10%; */
   position: relative;
 }
-
-#landing-front h2, .landing-arrow i {
+#landing-front span.text-blue {
   color: var(--blue-accent);
 }
-
-.landing-arrow {
-  position: absolute;
-  bottom: 15%;
-  right: 15%;
+#landing-front p.text-lightgray {
+  color: var(--light-gray);
+}
+.landing-img {
+	display: flex;
+	justify-content: flex-end;
 }
 
 /* about section */
 #about {
-  padding: 100px 0;
+	padding: 100px 100px;
+	background-color: var(--secondary-color);
+	color: var(--main-color);
 }
-
 #about p {
-  margin: 3rem auto;
   font-size: 19px;
   /* background-color: red; */
 }
-
 #about strong {
   text-decoration: underline;
 }
 
 .skills-logos {
-  text-align: center;
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+  /* text-align: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  /* background-color: red; */
+  justify-content: center; */
 }
-
 .skills-logos i {
-  font-size: 3rem;
+  font-size: 2.5rem;
   display: block;
 }
 #about .skills-logos p {
-  font-size: 16px;
-}
-
-#about .skills-logos p {
-  margin: 2.5%;
+  font-size: 1rem;
 }
 
 /* contact section */
 #contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
   gap: 15px;
   padding: 20px;
 }
-
 #contact .contact-message {
-  margin-top: 30px;
-  width: 80%;
   font-size: 1.5rem;
 }
-
 .contact-mail {
   margin: 15px 0;
 }
-
 .contact-mail a {
   color: inherit;
 }
@@ -159,22 +154,16 @@ a.anchor {
   border-radius: 3px;
   transition: all 0.3s;
 }
-
 .contact-socials i:hover {
   transform: translate(3px, -5px);
   color: var(--blue-accent) !important;
   box-shadow: -3px 5px 5px 1px rgba(128, 128, 128, 0.63);
 }
 
-#yt-icon {
-  color: #FF0000;
-}
-
 .mail-link {
   padding: 0 5px 0 2px;
   transition: all 0.3s;
 }
-
 .mail-link:hover {
   background-color: var(--blue-accent);
   color: var(--main-color);
@@ -184,8 +173,8 @@ a.anchor {
 #contact form {
   box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.418);
   border-radius: 3px;
-  max-width: 900px;
-  min-width: 500px;
+  max-width: 800px;
+  min-width: 400px;
   width: 60%;
   padding: 50px 27px;
   margin-top: 30px;
@@ -202,7 +191,6 @@ form input, form textarea {
   border-radius: 3px;
   border: 1.5px solid #000033;
 }
-
 form button {
   height: 20%;
   padding: 8px;
@@ -216,7 +204,6 @@ form button {
   border: none;
   transition: .3s;
 }
-
 form button:hover {
   transform: translate(3px, -5px);
   background-color: var(--blue-accent);

@@ -17,59 +17,55 @@
 </head>
 
 <body>
-	<div class="background-container">
-		<!-- background-container is used to style background with animations (add later) -->
-		<div class="portfolio-container">
-			<header>
-				<nav class="navbar">
-					<p><a href="#">dac.nguyen</a></p>
-					<a href="#dead-link" class="toggle-button">
-						<span class="bar"></span>
-						<span class="bar"></span>
-						<span class="bar"></span>
-					</a>
-					<ul class="nav-menu">
-						<li><a href="#projects-anchor">.projects</a></li>
-						<li><a href="#about-anchor">.about</a></li>
-						<li><a href="#contact-anchor">.contact</a></li>
-						<!-- <button id="color-theme" type="button">Dark Mode</button> -->
-					</ul>
-				</nav>
-			</header>
+	<div class="portfolio-container">
+		<header>
+			<nav class="navbar">
+				<p><a href="#">dac.nguyen</a></p>
+				<a href="#dead-link" class="toggle-button">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</a>
+				<ul class="nav-menu">
+					<li><a href="#projects-anchor">.projects</a></li>
+					<li><a href="#about-anchor">.about</a></li>
+					<li><a href="#contact-anchor">.contact</a></li>
+					<!-- <button id="color-theme" type="button">Dark Mode</button> -->
+				</ul>
+			</nav>
+		</header>
 
-			<main>
-				<section id="landing-front" class="flex-1">
-					<div>
-						<p>Hello there, I'm Dac &#x270C;</p>
-						<p>I'm a <span>&#60;&#47;frontend developer&gt;</span></p>
-						<p>I'm a developer with experience in many different languages, frameworks, and technologies. I'm always
-							looking for new challenges to tackle.</p>
-						<div>icons</div>
+		<main>
+			<section id="landing-front" class="flex-1">
+				<div class="flex-half">
+					<p>Hello there, I'm Dac &#x270C;</p>
+					<p>I'm a <span class="text-blue">&#60;&#47;frontend developer&gt;</span></p>
+					<p class="text-lightgray">I'm a developer with experience in many different languages, frameworks, and
+						technologies. I'm always looking for new challenges to tackle.</p>
+					<div class="contact-socials">
+						<!-- <a href="https://www.youtube.com/" target="_blank"><i id="yt-icon" class="fa-brands fa-youtube"></i></a> -->
+						<a href="https://github.com/pieton97" target="_blank"><i class="fa-brands fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/dac-nguyen-734940185" target="_blank"><i
+								class="fa-brands fa-linkedin"></i></a>
+						<a href="https://codepen.io/pieton" target="_blank"><i class="fa-brands fa-codepen"></i></a>
 					</div>
-					<div>
-						<img src="project-imgages/templogo.png" alt="">
+				</div>
+				<div class="flex-half landing-img">
+					<img src="project-imgages/templogo.png" alt="">
+				</div>
+			</section>
+
+			<a class="anchor" id="projects-anchor"></a>
+			<section id="projects">
+				<h2 class="text-heading blue-text">&#60;My Projects&#62;</h2>
+
+				<div id="ecom" class="flex-1">
+					<div class="proj-img-container flex-half">
+						<a href="https://cookies-ecommerce.herokuapp.com/pages/homepage.php" target="_blank">
+							<img src="project-imgages/cookies-ecom-project.png" alt="">
+						</a>
 					</div>
-				</section>
-
-				<a class="anchor" id="projects-anchor"></a>
-				<section id="projects">
-					<h2 class="text-heading blue-text">My Projects</h2>
-					<p>Click on the buttons inside the tabbed menu:</p>
-
-					<div class="tab" id="tabBtns">
-						<button class="tablinks" id="defaultProject" onclick="openProject(event, 'ecom')">Ecommerce website</button>
-						<button class="tablinks" onclick="openProject(event, 'my-anime-app')">MyAnimeApp</button>
-						<button class="tablinks" onclick="openProject(event, 'recipe')">Recipe shuffler</button>
-						<button class="tablinks" onclick="openProject(event, 'portfolio')">This portfolio</button>
-						<button class="tablinks" onclick="openProject(event, 'yt-clone')">YT front page</button>
-					</div>
-
-					<div id="ecom" class="tabcontent">
-						<span onclick="closeProject(this)" class="topright">&times</span>
-						<div class="proj-img-container">
-							<a href="https://cookies-ecommerce.herokuapp.com/pages/homepage.php" target="_blank"><img
-									src="project-imgages/cookies-ecom-project.png" alt=""></a>
-						</div>
+					<div class="flex-half">
 						<div class="project-text">
 							<p>Ecommerce Website</p>
 							<p class="description">A fullstack ecommerce app for sweets lovers. Simple account registration,
@@ -85,13 +81,15 @@
 							</a>
 						</div>
 					</div>
+				</div>
 
-					<div id="my-anime-app" class="tabcontent">
-						<span onclick="closeProject(this)" class="topright">&times</span>
-						<div class="proj-img-container">
-							<a href="https://pieton97.github.io/My-anime-app/" target="_blank"><img
-									src="project-imgages/anime-app.png" alt=""></a>
-						</div>
+				<div id="my-anime-app" class="flex-2">
+					<div class="proj-img-container flex-half">
+						<a href="https://pieton97.github.io/My-anime-app/" target="_blank">
+							<img src="project-imgages/anime-app.png" alt="">
+						</a>
+					</div>
+					<div class="flex-half">
 						<div class="project-text">
 							<p>MyAnimeApp</p>
 							<p class="description">This React app was made with vanilla JavaScript using ES6 and functional components
@@ -110,13 +108,15 @@
 							</a>
 						</div>
 					</div>
+				</div>
 
-					<div id="recipe" class="tabcontent">
-						<span onclick="closeProject(this)" class="topright">&times</span>
-						<div class="proj-img-container">
-							<a href="https://pieton97.github.io/recipe-randomizer/" target="_blank"><img
-									src="project-imgages/recipe.png" alt=""></a>
-						</div>
+				<div id="recipe" class="flex-1">
+					<div class="proj-img-container flex-half">
+						<a href="https://pieton97.github.io/recipe-randomizer/" target="_blank">
+							<img src="project-imgages/recipe.png" alt="">
+						</a>
+					</div>
+					<div class="flex-half">
 						<div class="project-text">
 							<p>Recipe shuffler</p>
 							<p class="description">This randomizer can take any input like ingredients or a specific recipe name and
@@ -134,13 +134,15 @@
 							</a>
 						</div>
 					</div>
+				</div>
 
-					<div id="portfolio" class="tabcontent">
-						<span onclick="closeProject(this)" class="topright">&times</span>
-						<div class="proj-img-container">
-							<a href="https://pieton97.github.io/Dac-portfolio/" target="_blank"><img
-									src="project-imgages\portfolio project picture.png" alt=""></a>
-						</div>
+				<div id="portfolio" class="flex-2">
+					<div class="proj-img-container flex-half">
+						<a href="https://pieton97.github.io/Dac-portfolio/" target="_blank">
+							<img src="project-imgages\portfolio project picture.png" alt="">
+						</a>
+					</div>
+					<div class="flex-half">
 						<div class="project-text">
 							<p>This portfolio</p>
 							<p class="description">A simple but clean portfolio with some of my projects, dark/light feature, and use
@@ -157,13 +159,15 @@
 							</a>
 						</div>
 					</div>
+				</div>
 
-					<div id="yt-clone" class="tabcontent">
-						<span onclick="closeProject(this)" class="topright">&times</span>
-						<div class="proj-img-container">
-							<a href="https://pieton97.github.io/youtube-clone/" target="_blank"><img
-									src="project-imgages/youtube clone pic.jpg" alt=""></a>
-						</div>
+				<div id="yt-clone" class="flex-1">
+					<div class="proj-img-container flex-half">
+						<a href="https://pieton97.github.io/youtube-clone/" target="_blank">
+							<img src="project-imgages/youtube clone pic.jpg" alt="">
+						</a>
+					</div>
+					<div class="flex-half">
 						<div class="project-text">
 							<p>Youtube front page</p>
 							<p class="description">Nothing much to say here just a small project for me to practice grid/flexbox,
@@ -179,30 +183,18 @@
 							</a>
 						</div>
 					</div>
-				</section>
+				</div>
+			</section>
 
-				<a class="anchor" id="about-anchor"></a>
-				<section id="about">
-					<!-- bottom section about me -->
-					<h2 class="text-heading blue-text">ABOUT ME</h2>
-					<p>
-						<i class="fa-solid fa-quote-left"></i>
-						Tell me and I forget. Teach me and I remember. Involve me and I learn.
-						<i class="fa-solid fa-quote-right"></i>
-					</p>
-					<p>
-						<i class="fa-solid fa-angles-right"></i> Benjamin Franklin
-					</p>
-
-					<p>Hi, I'm Dac and I'm a self-taught developer. I'm a curious guy who likes to learn about random things and
-						random stuff about anything.</p>
-					<p><strong>Why did I decide to code?</strong> Tech is everywhere in the world today and I believe will be more
-						so in the future. I want to be part of its growth and innovation, so what's a better way to start than by
-						building simple but beautiful websites?</p>
-					<p><strong>When I'm not coding in front of a computer screen.</strong> I like to watch anime, hit the gym or
-						play some valorant with friends.</p>
-
-					<h2 class="text-heading blue-text">SKILLS</h2>
+			<a class="anchor" id="about-anchor"></a>
+			<div id="about" class="flex-1">
+				<div class="flex-half">
+					<h2 class="text-heading blue-text">&#60;About Me&#62;</h2>
+					<p>Tools & Languages</p>
+					<p>I'm a developer with experience in many different languages, frameworks, and
+						technologies. I'm always looking for new challenges to tackle.</p>
+				</div>
+				<div class="flex-half">
 					<div class="skills-logos">
 						<p><i class="fa-brands fa-html5"></i>HTML</p>
 						<p><i class="fa-brands fa-css3-alt"></i>CSS</p>
@@ -214,41 +206,40 @@
 						<p><i class="fa-brands fa-php"></i>Php</p>
 						<p><i class="fa-solid fa-database"></i>Light Sql</p>
 					</div>
-				</section>
+				</div>
+			</div>
 
-				<a class="anchor" id="contact-anchor"></a>
-				<section id="contact">
-					<div class="contact-message">
-						<h1 class="blue-text">Let's work together</h1>
-						<div class="contact-mail">
-							<p>Have any questions?</p>
-							<p><a class="mail-link" href="mailto:dacng4108@gmail.com?subject=Hi! lets work together">Click here to
-									send an email</a> or peep my socials out below.</p>
-						</div>
-						<div class="contact-socials">
-							<!-- <a href="https://www.youtube.com/" target="_blank"><i id="yt-icon" class="fa-brands fa-youtube"></i></a> -->
-							<a href="https://github.com/pieton97" target="_blank"><i class="fa-brands fa-github"></i></a>
-							<a href="https://www.linkedin.com/in/dac-nguyen-734940185" target="_blank"><i
-									class="fa-brands fa-linkedin"></i></a>
-							<a href="https://codepen.io/pieton" target="_blank"><i class="fa-brands fa-codepen"></i></a>
-						</div>
+			<a class="anchor" id="contact-anchor"></a>
+			<section id="contact" class="flex-1">
+				<div class="contact-message flex-half">
+					<h1 class="blue-text">&#60;Let's work together&#62;</h1>
+					<div class="contact-mail">
+						<p>Have any questions?</p>
+						<p><a class="mail-link" href="mailto:dacng4108@gmail.com?subject=Hi! lets work together">Click here to
+								send an email</a> or peep my socials out below.</p>
 					</div>
+					<div class="contact-socials">
+						<a href="https://github.com/pieton97" target="_blank"><i class="fa-brands fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/dac-nguyen-734940185" target="_blank"><i
+								class="fa-brands fa-linkedin"></i></a>
+						<a href="https://codepen.io/pieton" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+					</div>
+				</div>
 
-					<form action="https://formsubmit.co/05455006b6543bade9f2c33097a7d876" method="POST" target="_blank">
-						<input type="text" name="name" placeholder="Name" required>
-						<input type="email" name="email" placeholder="Email" required>
-						<textarea name="body" id="" cols="30" rows="5" placeholder="Message" required></textarea>
-						<button type="submit">SEND</button>
-					</form>
-					<!-- bottom section, contact me form -->
-				</section>
-			</main>
+				<form class="flex-half" action="https://formsubmit.co/05455006b6543bade9f2c33097a7d876" method="POST" target="_blank">
+					<input type="text" name="name" placeholder="Name" required>
+					<input type="email" name="email" placeholder="Email" required>
+					<textarea name="body" id="" cols="30" rows="5" placeholder="Message" required></textarea>
+					<button type="submit">SEND</button>
+				</form>
+			</section>
+		</main>
 
-			<!-- footer section -->
-			<footer>
-				<p>Copyright &copy 2022 Dac Nguyen. All rights reserved.</p>
-			</footer>
-		</div>
+		<hr>
+		<!-- footer section -->
+		<footer>
+			<p>Copyright &copy 2022 Dac Nguyen. All rights reserved.</p>
+		</footer>
 	</div>
 
 

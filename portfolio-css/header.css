@@ -1,6 +1,6 @@
 /* heading/nav bar section */
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -18,6 +18,7 @@ nav {
   position: relative;
   background-color: #121212;
   color: #F9F6EE;
+	/* color: var(--secondary-color); */
 	padding: 0 250px;
 }
 
