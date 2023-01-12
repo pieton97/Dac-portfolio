@@ -1,6 +1,8 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-	margin: 0;
+  margin: 0;
   padding: 0;
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -9,16 +11,16 @@
   }
 }
 :root {
-  --main-color: #FFFFFF;
+  --main-color: #ffffff;
   --secondary-color: #000000;
-	--light-gray: #717171;
-  --blue-accent: #2275C1;
+  --light-gray: #717171;
+  --blue-accent: #2275c1;
   --project-accent: #e4872a;
 }
 
 .dark-theme {
   --main-color: #121212;
-  --secondary-color: #F9F6EE;
+  --secondary-color: #f9f6ee;
 }
 
 /* general css */
@@ -31,15 +33,14 @@ body {
 .portfolio-container {
   width: 100%;
   min-width: 380px;
-  /* max-width: 1400px; */
   margin: 0 auto;
-  /* border: 1px solid red; */
   background-color: transparent;
 }
 section {
   width: 85%;
-	margin: 10px auto;
-	/* background-color: lightblue; */
+  max-width: 1800px;
+  margin: 50px auto;
+  /* background-color: lightblue; */
   /* margin: 80px auto; */
 }
 
@@ -61,28 +62,28 @@ a.anchor {
 }
 
 .flex-1 {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	gap: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 }
 .flex-2 {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: center;
-	align-items: center;
-	gap: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 }
 .flex-half {
-	flex: 1;
+  flex: 1;
 }
 
 /* landing front page */
 #landing-front {
   font-size: 1.5rem;
   /* height: 100vh; */
-  margin: 10px auto;
+	max-width: 1400px;
   /* padding: 10%; */
   position: relative;
 }
@@ -93,15 +94,15 @@ a.anchor {
   color: var(--light-gray);
 }
 .landing-img {
-	display: flex;
-	justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* about section */
 #about {
-	padding: 100px 100px;
-	background-color: var(--secondary-color);
-	color: var(--main-color);
+  padding: 100px 100px;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
 }
 #about p {
   font-size: 19px;
@@ -112,10 +113,10 @@ a.anchor {
 }
 
 .skills-logos {
-	text-align: center;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   /* text-align: center;
   display: flex;
   flex-direction: row;
@@ -134,10 +135,10 @@ a.anchor {
 /* contact section */
 #contact {
   gap: 15px;
-  padding: 20px;
+  padding: 40px;
 }
 #contact .contact-message {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .contact-mail {
   margin: 15px 0;
@@ -147,7 +148,7 @@ a.anchor {
 }
 
 .contact-socials i {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--secondary-color);
   margin: 5px;
   padding: 7px;
@@ -173,21 +174,24 @@ a.anchor {
 #contact form {
   box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.418);
   border-radius: 3px;
-  max-width: 800px;
-  min-width: 400px;
+  max-width: 600px;
+  min-width: 300px;
   width: 60%;
   padding: 50px 27px;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 10px;
 }
-
-form input, form textarea {
+#contact form label {
+  font-size: 1.3rem;
+}
+form input,
+form textarea {
   padding: 7px;
   padding-left: 13px;
-  font-size: 1.4rem;
-  background-color: #F9F6EE;
+  margin-bottom: 20px;
+  font-size: 1rem;
   border-radius: 3px;
   border: 1.5px solid #000033;
 }
@@ -202,13 +206,13 @@ form button {
   font-size: 1.2rem;
   font-weight: 700;
   border: none;
-  transition: .3s;
+  transition: 0.3s;
 }
 form button:hover {
   transform: translate(3px, -5px);
   background-color: var(--blue-accent);
   box-shadow: -3px 5px 5px 1px rgba(128, 128, 128, 0.63);
-  color: #F9F6EE;
+  color: #f9f6ee;
 }
 
 @media (max-width: 993px) {
@@ -234,7 +238,7 @@ footer {
     width: 90%;
     margin: 50px auto;
   }
-  
+
   .text-heading {
     font-size: 1.5rem;
   }
@@ -263,17 +267,17 @@ footer {
     font-size: 34px;
     padding: 6%;
   }
-  
+
   /* about */
   #about {
     padding: 0;
   }
-  
+
   #about p {
     margin: 3rem auto;
     font-size: 17px;
   }
-  
+
   .skills-logos i {
     font-size: 2.4rem;
   }
@@ -315,15 +319,15 @@ footer {
     width: 80%;
     font-size: 1.25rem;
   }
-  
+
   .contact-mail {
     margin: 10px 0;
   }
-  
+
   .contact-socials i {
     font-size: 2.5rem;
   }
-    
+
   #contact form {
     min-width: 300px;
     width: 70%;
@@ -332,7 +336,8 @@ footer {
     gap: 1.2rem;
   }
 
-  form input, form textarea {
+  form input,
+  form textarea {
     padding: 10px;
     padding-left: 13px;
     font-size: 1rem;
@@ -359,7 +364,7 @@ footer {
     width: 90%;
     margin: 30px auto;
   }
-  
+
   .text-heading {
     font-size: 1.4rem;
   }
@@ -383,8 +388,8 @@ footer {
     font-size: 27px;
     padding: 4%;
   }
-  
-  /* about */  
+
+  /* about */
   #about p {
     margin: 3rem auto;
     font-size: 16px;
@@ -405,7 +410,7 @@ footer {
     margin: 5px;
   }
 
-  .project-btns{
+  .project-btns {
     gap: 10px;
     margin-top: 10px;
   }
@@ -433,15 +438,15 @@ footer {
     width: 80%;
     font-size: 1.1rem;
   }
-  
+
   .contact-mail {
     margin: 8px 0;
   }
-  
+
   .contact-socials i {
     font-size: 2.3rem;
   }
-    
+
   #contact form {
     min-width: 300px;
     width: 85%;
@@ -450,7 +455,8 @@ footer {
     gap: 1rem;
   }
 
-  form input, form textarea {
+  form input,
+  form textarea {
     padding: 10px;
     padding-left: 13px;
     font-size: 1rem;
@@ -480,7 +486,7 @@ footer {
     width: 90%;
     margin: 30px auto;
   }
-  
+
   .text-heading {
     font-size: 1.4rem;
   }
@@ -504,8 +510,8 @@ footer {
     font-size: 27px;
     padding: 7%;
   }
-  
-  /* about */  
+
+  /* about */
   #about p {
     margin: 2.5rem auto;
     font-size: 13px;
@@ -532,7 +538,7 @@ footer {
     font-size: 12px;
   }
 
-  .project-btns{
+  .project-btns {
     gap: 5px;
     margin-top: 10px;
   }
@@ -581,11 +587,11 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   nav p {
     margin-left: 2.5rem;
   }
-  
+
   .toggle-button {
     display: flex;
   }
@@ -601,7 +607,7 @@ footer {
   }
 
   .nav-menu li a {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .nav-menu.active {

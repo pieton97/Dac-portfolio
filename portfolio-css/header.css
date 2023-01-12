@@ -6,31 +6,26 @@ header {
   right: 0;
   font-size: 2rem;
   z-index: 100;
+  background-color: #121212;
   box-shadow: 0 0 10px rgba(128, 128, 128, 0.363);
-  font-weight: 800;
+	line-height: 60px;
+  font-weight: bold;
 }
-
 nav {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   align-items: center;
   position: relative;
-  background-color: #121212;
   color: #F9F6EE;
-	/* color: var(--secondary-color); */
-	padding: 0 250px;
+	max-width: 1800px;
+	margin: 0 auto;
 }
-
 nav p {
   /* width: 40%; */
-	/* background-color: red; */
 	margin-right: auto;
 }
-
 .nav-menu {
   font-size: 1.5rem;
-  /* width: 40%; */
 	/* background-color: orange; */
 	gap: 30px;
   display: flex;
@@ -38,7 +33,6 @@ nav p {
   justify-content: space-around;
   align-items: center;
 }
-
 header a {
   text-decoration: none;
   color: inherit;
@@ -47,12 +41,6 @@ nav ul li {
   list-style: none;
 }
 
-/* nav button {
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 10px;
-} */
-
 /* menu responsive on smaller screen */
 nav ul {
   height: 100%;
@@ -60,18 +48,15 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-
 nav li a {
   display: block;
   text-decoration: none;
   color: #F9F6EE;
   padding: 1rem;
 }
-
 nav li:hover {
   background-color: #555;
 }
-
 .toggle-button {
   position: absolute;
   top: 1.25rem;
@@ -82,7 +67,6 @@ nav li:hover {
   width: 30px;
   height: 21px;
 }
-
 .toggle-button .bar {
   height: 3px;
   width: 100%;

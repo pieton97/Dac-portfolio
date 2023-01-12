@@ -1,11 +1,8 @@
 .project-btns {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   gap: 10px;
-  margin-top: 18px;
 }
-
 .project-btns a {
   text-decoration: none;
   padding: 12px 24px;
@@ -14,15 +11,12 @@
   color: var(--main-color);
   cursor: pointer;
   border-radius: 3px;
-  letter-spacing: 3px;
   font-size: 14px;
   border: none;
-  transition: .3s;
+  transition: 0.3s;
 }
-
 .project-btns a:hover {
   background-color: var(--project-accent);
-  color: #F9F6EE;
 }
 
 .project-text {
@@ -32,30 +26,54 @@
 .project-text .description {
   font-size: 16px;
 }
-
+#projects .tech-stack {
+  font-weight: bold;
+}
 .project-text p:first-child {
   font-weight: bold;
 }
 
 #projects .proj-img-container {
-  width: 80%;
+  width: 100%;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	/* background-color: lightblue; */
+	border-radius: 15px;
   display: block;
-  margin: 30px auto;
   object-fit: cover;
   object-position: center;
   transition: all 0.3s;
 }
-
 #projects .proj-img-container:hover {
   opacity: 0.7;
 }
-
 #projects img {
-  width: 100%;
+	height: 100%;
   object-fit: cover;
   object-position: center;
+	position: absolute;
+	top: 13%;
+	left: 20%;
+	background-color: var(--main-color);
+	padding: 5px;
+	border-radius: 15px;
+	border: 1px solid rgba(0, 0, 0, 0.46)
 }
 
-#projects .tech-stack {
-  font-weight: bold;
+/* project bg colors by project names */
+.bg-ecom {
+	background-color: #E8D850;
+}
+.bg-animeapp {
+	background-color: #724AE4;
+}
+.bg-recipe {
+	background-color: #D470DD;
+}
+.bg-portfolio {
+	background-color: #2275c1;
+}
+.bg-youtube {
+	background-color: #E07D69;
 }
