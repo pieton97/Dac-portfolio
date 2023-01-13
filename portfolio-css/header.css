@@ -5,6 +5,7 @@ header {
   left: 0;
   right: 0;
   font-size: 2rem;
+	padding: 0 30px;
   z-index: 100;
   background-color: #121212;
   box-shadow: 0 0 10px rgba(128, 128, 128, 0.363);
@@ -52,7 +53,7 @@ nav li a {
   display: block;
   text-decoration: none;
   color: #F9F6EE;
-  padding: 1rem;
+  padding: 10px 1rem;
 }
 nav li:hover {
   background-color: #555;

@@ -11,7 +11,6 @@
   color: var(--main-color);
   cursor: pointer;
   border-radius: 3px;
-  font-size: 14px;
   border: none;
   transition: 0.3s;
 }
@@ -20,17 +19,18 @@
 }
 
 .project-text {
-  font-size: 1.1rem;
-  margin: 10px;
+  font-size: 1rem;
 }
 .project-text .description {
-  font-size: 16px;
+	color: var(--light-gray);
 }
 #projects .tech-stack {
-  font-weight: bold;
+	color: var(--light-gray);
+	font-weight: bold;
 }
 .project-text p:first-child {
   font-weight: bold;
+	font-size: 1.3rem;
 }
 
 #projects .proj-img-container {
@@ -46,7 +46,8 @@
   transition: all 0.3s;
 }
 #projects .proj-img-container:hover {
-  opacity: 0.7;
+  opacity: 0.85;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
 }
 #projects img {
 	height: 100%;
