@@ -14,6 +14,11 @@
 	<link rel="stylesheet" href="css/all.css">
 	<script src="index.js" defer></script>
 	<!-- <script src="https://kit.fontawesome.com/086ab87877.js" crossorigin="anonymous"></script> -->
+	<!-- roboto font from google -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap"
+		rel="stylesheet">
 </head>
 
 <body>
@@ -36,10 +41,10 @@
 
 		<main>
 			<section id="landing-front" class="flex-1">
-				<div class="flex-half">
-					<p>Hello there, I'm Dac &#x270C;</p>
-					<p>I'm a <span class="blue-text">&#60;&#47;frontend developer&gt;</span></p>
-					<p class="text-lightgray">I'm a developer with experience in many different languages, frameworks, and
+				<div class="flex-half landing-info">
+					<p class="landing-title">Hello there, I'm Dac &#x270C;</p>
+					<p class="landing-title">I'm a <span class="blue-text">&#60;&#47;frontend developer&gt;</span></p>
+					<p class="lightgray-text">I'm a developer with experience in many different languages, frameworks, and
 						technologies. I'm always looking for new challenges to tackle.</p>
 					<div class="contact-socials">
 						<!-- <a href="https://www.youtube.com/" target="_blank"><i id="yt-icon" class="fa-brands fa-youtube"></i></a> -->
@@ -49,14 +54,13 @@
 						<a href="https://codepen.io/pieton" target="_blank"><i class="fa-brands fa-codepen"></i></a>
 					</div>
 				</div>
-				<div class="landing-img">
-					<img src="project-imgages/templogo.png" alt="">
+				<div>
+					<img src="project-imgages/landinglogo.png" alt="landing logo of person">
 				</div>
 			</section>
 
 			<a class="anchor" id="projects-anchor"></a>
 			<section id="projects">
-				<hr>
 				<p class="text-heading blue-text">&#60;My Projects&#62;</p>
 
 				<div id="ecom" class="flex-1">
@@ -66,7 +70,7 @@
 					</a>
 					<div class="flex-half">
 						<div class="project-text">
-							<p>Ecommerce Website</p>
+							<p>Ecommerce website</p>
 							<p class="description">A fullstack ecommerce app for sweets lovers. Simple account registration,
 								cart/checkout process. Admin board to manage/edit products.</p>
 							<div class="tech-stack">Built with: php, sql, html/css, js, hosted on heroku</div>
@@ -91,9 +95,7 @@
 						<div class="project-text">
 							<p>MyAnimeApp</p>
 							<p class="description">This React app was made with vanilla JavaScript using ES6 and functional components
-								with hooks. Inlucdes the use of modals, local storage, and pagination on all of fetch endpoints. Data is
-								fetched in parallel so load and renders are usually under than a second. Website is mobile responsive
-								and looks great on any device.</p>
+								with hooks. Inlucdes the use of modals, local storage, and pagination on all of fetch endpoints.</p>
 							<div class="tech-stack">Built with: React, <a href="https://jikan.moe/" target="_blank">Jikan API</a>
 							</div>
 						</div>
@@ -115,10 +117,9 @@
 					</a>
 					<div class="flex-half">
 						<div class="project-text">
-							<p>Recipe shuffler</p>
+							<p>Recipe resolver</p>
 							<p class="description">This randomizer can take any input like ingredients or a specific recipe name and
-								result a list of recipes with information and a list of its ingredients. User can also filter recipe by
-								glutten-free or vegetarian foods. Website is mobile responsive and looks great on any device.</p>
+								result a list of recipes with information and a list of its ingredients.</p>
 							<div class="tech-stack">Built with: HTML, CSS, JavaScript, <a href="https://www.edamam.com/"
 									target="_blank">Edamam API</a></div>
 						</div>
@@ -142,8 +143,7 @@
 						<div class="project-text">
 							<p>This portfolio</p>
 							<p class="description">A simple but clean portfolio with some of my projects, dark/light feature, and use
-								of local storage. Form on the contact page uses FormSubmit so it works without any backend code. The
-								portfolio is mobile responsive and looks great on any device.</p>
+								of local storage. Form on the contact page uses FormSubmit so it works without any backend code.</p>
 							<div class="tech-stack">Built with: HTML, CSS, JavaScript</div>
 						</div>
 						<div class="project-btns">
@@ -182,24 +182,26 @@
 			</section>
 
 			<a class="anchor" id="about-anchor"></a>
-			<div id="about" class="flex-1">
-				<div class="flex-half">
-					<p class="text-heading blue-text">&#60;About Me&#62;</p>
-					<p>Tools & Languages</p>
-					<p>I'm a developer with experience in many different languages, frameworks, and
-						technologies. I'm always looking for new challenges to tackle.</p>
-				</div>
-				<div class="flex-half">
-					<div class="skills-logos">
-						<p><i class="fa-brands fa-html5"></i>HTML</p>
-						<p><i class="fa-brands fa-css3-alt"></i>CSS</p>
-						<p><i class="fa-brands fa-js-square"></i>JavaScript</p>
-						<p><i class="fa-brands fa-react"></i>React</p>
-						<p><i class="fa-brands fa-git-alt"></i>Git</p>
-						<p><i class="fa-brands fa-github"></i>Github</p>
-						<p><i class="fa-brands fa-bootstrap"></i>Bootstrap</p>
-						<p><i class="fa-brands fa-php"></i>Php</p>
-						<p><i class="fa-solid fa-database"></i>Light Sql</p>
+			<div id="about">
+				<div class="flex-1">
+					<div class="flex-half about-story">
+						<p class="text-heading blue-text">&#60;About Me&#62;</p>
+						<p class="text-heading">Tools & Languages</p>
+						<p class="lightgray-text">I'm a developer with experience in many different languages, frameworks, and
+							technologies. I'm always looking for new challenges to tackle.</p>
+					</div>
+					<div class="flex-half">
+						<div class="skills-logos">
+							<p><i class="fa-brands fa-html5"></i>HTML</p>
+							<p><i class="fa-brands fa-css3-alt"></i>CSS</p>
+							<p><i class="fa-brands fa-js-square"></i>JavaScript</p>
+							<p><i class="fa-brands fa-react"></i>React</p>
+							<p><i class="fa-brands fa-git-alt"></i>Git</p>
+							<p><i class="fa-brands fa-github"></i>Github</p>
+							<p><i class="fa-brands fa-bootstrap"></i>Bootstrap</p>
+							<p><i class="fa-brands fa-php"></i>Php</p>
+							<p><i class="fa-solid fa-database"></i>Light Sql</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -208,12 +210,10 @@
 			<section id="contact" class="flex-1">
 				<div class="contact-message flex-half">
 					<p class="text-heading blue-text">&#60;Contact&#62;</p>
-					<div class="contact-mail">
-						<p>Let's work together</p>
-						<p>Have any questions?</p>
-						<p><a class="mail-link" href="mailto:dacng4108@gmail.com?subject=Hi! lets work together">Click here to
-								send an email</a> or peep my socials out below.</p>
-					</div>
+					<p class="text-heading">Let's work together</p>
+					<p class="lightgray-text">I’m open for new projects, let’s have a talk to discuss your project and see what we can achieve.</p>
+					<p class="lightgray-text"><a class="mail-link" href="mailto:dacng4108@gmail.com?subject=Hi! lets work together">Click here to
+							send an email</a> or peep my socials out below.</p>
 					<div class="contact-socials">
 						<a href="https://github.com/pieton97" target="_blank"><i class="fa-brands fa-github"></i></a>
 						<a href="https://www.linkedin.com/in/dac-nguyen-734940185" target="_blank"><i

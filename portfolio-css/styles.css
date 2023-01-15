@@ -15,25 +15,24 @@
   --secondary-color: #000000;
   --light-gray: #717171;
   --blue-accent: #2275c1;
-  --project-accent: #e4872a;
+  /* --project-accent: #e4872a; */
 }
 
 .dark-theme {
   --main-color: #121212;
   --secondary-color: #f9f6ee;
 }
-
 .bg-test {
-	background-color: antiquewhite;
+  background-color: antiquewhite;
 }
 
 /* general css */
 body {
   background-color: var(--main-color);
   color: var(--secondary-color);
-  font-family: monospace, sans-serif, Arial;
+  font-family: Roboto, monospace, sans-serif, Arial;
   transition: 0.3s;
-	font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 .portfolio-container {
   width: 100%;
@@ -44,7 +43,7 @@ body {
 section {
   width: 85%;
   max-width: 1800px;
-  margin: 50px auto;
+  margin: 100px auto;
   /* background-color: lightblue; */
   /* margin: 80px auto; */
 }
@@ -52,10 +51,13 @@ section {
 .text-heading {
   /* text-align: center; */
   font-size: 2.2rem;
-	font-weight: bold;
+  font-weight: bold;
 }
 .blue-text {
   color: var(--blue-accent);
+}
+.lightgray-text {
+  color: var(--light-gray);
 }
 a {
   color: inherit;
@@ -72,53 +74,58 @@ a.anchor {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 125px;
 }
 .flex-2 {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 125px;
 }
 .flex-half {
   flex: 1;
+  /* background-color: lightblue; */
 }
 
 /* landing front page */
 #landing-front {
-	max-width: 1400px;
-	/* background-color: lightblue; */
-	gap: 50px;
+  max-width: 1400px;
+  /* background-color: lightblue; */
+  gap: 80px;
+  margin: 120px auto;
 }
-#landing-front p.text-lightgray {
-  color: var(--light-gray);
+#landing-front .landing-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.landing-title {
+  font-size: 3rem;
+  font-weight: 500;
 }
 
 /* about section */
 #about {
-  padding: 100px 100px;
+  padding: 150px 0;
   background-color: var(--secondary-color);
   color: var(--main-color);
 }
-#about p {
-  /* background-color: red; */
+#about .flex-1 {
+  max-width: 1800px;
+  margin: 0 auto;
 }
-#about strong {
-  text-decoration: underline;
+#about .about-story {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .skills-logos {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  /* text-align: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center; */
+  gap: 60px;
 }
 .skills-logos i {
   font-size: 2.5rem;
@@ -130,16 +137,21 @@ a.anchor {
 
 /* contact section */
 #contact {
-  gap: 15px;
-  padding: 40px;
+  max-width: 1400px;
 }
 #contact .contact-message {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.contact-mail {
-  margin: 15px 0;
+.mail-link {
+  padding: 0 5px 0 2px;
+  transition: all 0.2s;
 }
-.contact-mail a {
-  color: inherit;
+.mail-link:hover {
+  background-color: var(--blue-accent);
+  color: var(--main-color);
+  opacity: 0.8;
 }
 
 .contact-socials i {
@@ -148,22 +160,12 @@ a.anchor {
   margin: 5px;
   padding: 7px;
   border-radius: 3px;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 .contact-socials i:hover {
   transform: translate(3px, -5px);
   color: var(--blue-accent) !important;
   box-shadow: -3px 5px 5px 1px rgba(128, 128, 128, 0.63);
-}
-
-.mail-link {
-  padding: 0 5px 0 2px;
-  transition: all 0.3s;
-}
-.mail-link:hover {
-  background-color: var(--blue-accent);
-  color: var(--main-color);
-  opacity: 0.8;
 }
 
 #contact form {
@@ -180,15 +182,27 @@ a.anchor {
 }
 #contact form label {
   /* font-size: 1.3rem; */
+  color: #181818;
 }
 form input,
 form textarea {
-  padding: 7px;
-  padding-left: 13px;
+  padding: 16px;
+  /* padding-left: 13px; */
   margin-bottom: 20px;
   font-size: 1rem;
   border-radius: 3px;
-  border: 1.5px solid #000033;
+  border: 1.5px solid #dadada;
+}
+#name {
+  background: url(/project-imgages/contact-name.svg) no-repeat 10px 47%;
+  padding-left: 40px;
+}
+#email {
+  background: url(/project-imgages/contact-email.svg) no-repeat 10px 47%;
+  padding-left: 40px;
+}
+#message {
+	font-size: 1.05rem;
 }
 form button {
   height: 20%;
@@ -198,7 +212,7 @@ form button {
   cursor: pointer;
   border-radius: 3px;
   letter-spacing: 3px;
-	font-weight: 600;
+  font-weight: 600;
   font-size: 1.25rem;
   border: none;
   transition: 0.3s;
@@ -224,7 +238,9 @@ footer {
   text-align: center;
   font-size: 1.5rem;
   padding: 1rem;
-  margin-bottom: 8px;
+  padding-bottom: 1.5rem;
+  /* background-color: var(--secondary-color);
+	color: var(--main-color); */
 }
 
 /* responsive design section below */

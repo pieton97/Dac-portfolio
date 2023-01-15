@@ -1,36 +1,60 @@
+#projects > div {
+	margin: 50px 0;
+}
+#projects .text-heading {
+	margin-top: 50px;
+}
+#projects > div:nth-child(odd) div.flex-half {
+	text-align: right;
+}
+#projects > div:nth-child(odd) div.project-btns {
+	justify-content: end;
+}
+
 .project-btns {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 32px;
+	margin-top: 24px;
 }
 .project-btns a {
   text-decoration: none;
-  padding: 12px 24px;
-  margin: 10px;
+  padding: 20px 48px;
   background-color: var(--secondary-color);
   color: var(--main-color);
+	border: 1px solid var(--secondary-color);
   cursor: pointer;
   border-radius: 3px;
-  border: none;
-  transition: 0.3s;
+  transition: 0.2s;
+}
+.project-btns a:nth-child(2) {
+	background-color: var(--main-color);
+	color: var(--secondary-color);
+	border: 1px solid var(--secondary-color);
 }
 .project-btns a:hover {
-  background-color: var(--project-accent);
+  background-color: var(--blue-accent);
+}
+.project-btns a:nth-child(2):hover {
+	color: var(--main-color);
 }
 
 .project-text {
-  font-size: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.project-text p:first-child {
+	font-weight: 500;
+	font-size: 2.3rem;
 }
 .project-text .description {
 	color: var(--light-gray);
+	font-weight: 400;
 }
 #projects .tech-stack {
 	color: var(--light-gray);
-	font-weight: bold;
-}
-.project-text p:first-child {
-  font-weight: bold;
-	font-size: 1.3rem;
+	font-weight: 500;
 }
 
 #projects .proj-img-container {
@@ -43,7 +67,7 @@
   display: block;
   object-fit: cover;
   object-position: center;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 #projects .proj-img-container:hover {
   opacity: 0.85;
