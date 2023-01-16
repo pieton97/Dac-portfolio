@@ -107,7 +107,7 @@ a.anchor {
 
 /* about section */
 #about {
-  padding: 150px 0;
+  padding: 150px 100px;
   background-color: var(--secondary-color);
   color: var(--main-color);
 }
@@ -164,64 +164,67 @@ a.anchor {
 }
 .contact-socials i:hover {
   transform: translate(3px, -5px);
-  color: var(--blue-accent) !important;
+  color: var(--blue-accent);
   box-shadow: -3px 5px 5px 1px rgba(128, 128, 128, 0.63);
 }
 
 #contact form {
-  box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.418);
-  border-radius: 3px;
-  max-width: 600px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #a6a6a6;
+  border-radius: 15px;
+  max-width: 550px;
   min-width: 300px;
   width: 60%;
-  padding: 50px 27px;
+  padding: 50px 40px;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 #contact form label {
-  /* font-size: 1.3rem; */
   color: #181818;
 }
 form input,
 form textarea {
   padding: 16px;
-  /* padding-left: 13px; */
   margin-bottom: 20px;
   font-size: 1rem;
-  border-radius: 3px;
+  border-radius: 5px;
   border: 1.5px solid #dadada;
+  background-color: #fcfcfc;
 }
 #name {
   background: url(/project-imgages/contact-name.svg) no-repeat 10px 47%;
   padding-left: 40px;
+  background-color: #fcfcfc;
 }
 #email {
   background: url(/project-imgages/contact-email.svg) no-repeat 10px 47%;
   padding-left: 40px;
+  background-color: #fcfcfc;
 }
 #message {
-	font-size: 1.05rem;
+  font-size: 1.05rem;
 }
+
 form button {
-  height: 20%;
-  padding: 8px;
+  height: 64px;
+  /* padding: 8px; */
   background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   color: var(--main-color);
   cursor: pointer;
-  border-radius: 3px;
-  letter-spacing: 3px;
-  font-weight: 600;
+  border-radius: 5px;
   font-size: 1.25rem;
-  border: none;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 form button:hover {
-  transform: translate(3px, -5px);
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  /* transform: translate(3px, -5px);
   background-color: var(--blue-accent);
   box-shadow: -3px 5px 5px 1px rgba(128, 128, 128, 0.63);
-  color: #f9f6ee;
+  color: #f9f6ee; */
 }
 
 @media (max-width: 993px) {
@@ -236,7 +239,7 @@ form button:hover {
 /* footer section */
 footer {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 1rem;
   padding-bottom: 1.5rem;
   /* background-color: var(--secondary-color);
