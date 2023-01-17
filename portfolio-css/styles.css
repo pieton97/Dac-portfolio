@@ -25,6 +25,10 @@
 .bg-test {
   background-color: antiquewhite;
 }
+/* html,
+body {
+  overflow-x: hidden;
+} */
 
 /* general css */
 body {
@@ -44,12 +48,9 @@ section {
   width: 85%;
   max-width: 1800px;
   margin: 100px auto;
-  /* background-color: lightblue; */
-  /* margin: 80px auto; */
 }
 
 .text-heading {
-  /* text-align: center; */
   font-size: 2.2rem;
   font-weight: bold;
 }
@@ -91,6 +92,8 @@ a.anchor {
 /* landing front page */
 #landing-front {
   max-width: 1400px;
+  width: 100%;
+	padding: 0 100px;
   /* background-color: lightblue; */
   gap: 80px;
   margin: 120px auto;
@@ -103,6 +106,13 @@ a.anchor {
 .landing-title {
   font-size: 3rem;
   font-weight: 500;
+}
+#landing-front .landing-img-wrapper {
+  /* background-color: red; */
+}
+#landing-front img {
+  /* background-color: orange; */
+  width: 100%;
 }
 
 /* about section */
@@ -123,9 +133,16 @@ a.anchor {
 
 .skills-logos {
   text-align: center;
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 60px;
+  gap: 60px; */
+	
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+	gap: 100px;
 }
 .skills-logos i {
   font-size: 2.5rem;
@@ -194,22 +211,29 @@ form textarea {
   background-color: #fcfcfc;
 }
 #name {
-  background: url(/project-imgages/contact-name.svg) no-repeat 10px 47%;
+  background: url(/project-imgages/contact-name.svg) no-repeat;
+  background-position: 10px center;
   padding-left: 40px;
   background-color: #fcfcfc;
 }
 #email {
-  background: url(/project-imgages/contact-email.svg) no-repeat 10px 47%;
+  background: url(/project-imgages/contact-email.svg) no-repeat;
+  background-position: 10px center;
   padding-left: 40px;
   background-color: #fcfcfc;
 }
 #message {
   font-size: 1.05rem;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #fcfcfc inset !important;
+}
 
 form button {
   height: 64px;
-  /* padding: 8px; */
   background-color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
   color: var(--main-color);
@@ -221,13 +245,9 @@ form button {
 form button:hover {
   background-color: var(--main-color);
   color: var(--secondary-color);
-  /* transform: translate(3px, -5px);
-  background-color: var(--blue-accent);
-  box-shadow: -3px 5px 5px 1px rgba(128, 128, 128, 0.63);
-  color: #f9f6ee; */
 }
 
-@media (max-width: 993px) {
+@media (max-width: 850px) {
   #contact {
     flex-direction: column;
   }
@@ -239,7 +259,6 @@ form button:hover {
 /* footer section */
 footer {
   text-align: center;
-  font-size: 1.3rem;
   padding: 1rem;
   padding-bottom: 1.5rem;
   /* background-color: var(--secondary-color);
@@ -247,130 +266,98 @@ footer {
 }
 
 /* responsive design section below */
+@media only screen and (max-width: 1281px) {
+	body {
+		font-size: 1.15rem;
+	}
+	.text-heading {
+		font-size: 1.8rem;
+	}
+	section {
+		width: 90%;
+		margin: 60px auto;
+	}
+	.flex-1 {
+		/* flex-direction: column; */
+		gap: 60px;
+	}
+	.flex-2 {
+		/* flex-direction: column; */
+		gap: 60px;
+	}
+	#landing-front {
+		width: 100%;
+		padding: 0 60px;
+		gap: 60px;
+		margin: 80 auto;
+	}
+	.landing-title {
+		font-size: 2.5rem;
+		font-weight: 500;
+	}
+	.project-text p:first-child {
+		font-weight: 500;
+		font-size: 1.6rem;
+	}
+	#about {
+		padding: 100px 60px;
+	}
+	.contact-socials i {
+		font-size: 2rem;
+	}
+}
+
 @media only screen and (max-width: 993px) {
-  section {
-    width: 90%;
-    margin: 50px auto;
-  }
-
-  .text-heading {
-    font-size: 1.5rem;
-  }
-
-  /* header */
-  header {
-    font-size: 1.5rem;
-  }
-
-  nav p {
-    width: 30%;
-  }
-
-  .nav-menu {
-    font-size: 1.25rem;
-    width: 50%;
-  }
-
-  nav button {
-    font-size: 1rem;
-    padding: 7px;
-  }
-
-  /* landing */
-  #landing-front {
-    font-size: 34px;
-    padding: 6%;
-  }
-
-  /* about */
-  #about {
-    padding: 0;
-  }
-
-  #about p {
-    margin: 3rem auto;
-    font-size: 17px;
-  }
-
-  .skills-logos i {
-    font-size: 2.4rem;
-  }
-
-  #about .skills-logos p {
-    margin: 4%;
-  }
-
-  /* project */
-  .tab button {
-    padding: 8px 10px;
-    font-size: 15px;
-    margin: 7px 10px;
-  }
-
-  .project-btns {
-    gap: 10px;
-  }
-
-  .project-btns a {
-    padding: 12px 15px;
-    margin: 10px;
-    font-size: 13px;
-  }
-
-  .project-text {
-    font-size: 1.1rem;
-    margin: 8px;
-  }
-
-  #projects .proj-img-container {
-    width: 80%;
-    margin: 20px auto;
-  }
-
-  /* contact */
-  #contact .contact-message {
-    margin-top: 15px;
-    width: 80%;
-    font-size: 1.25rem;
-  }
-
-  .contact-mail {
-    margin: 10px 0;
-  }
-
-  .contact-socials i {
-    font-size: 2.5rem;
-  }
-
-  #contact form {
-    min-width: 300px;
-    width: 70%;
-    padding: 40px 27px;
-    margin-top: 20px;
-    gap: 1.2rem;
-  }
-
-  form input,
-  form textarea {
-    padding: 10px;
-    padding-left: 13px;
-    font-size: 1rem;
-  }
-
-  form button {
-    height: 20%;
-    padding: 8px;
-    letter-spacing: 3px;
-    font-size: 1rem;
-    font-weight: normal;
-  }
-
-  /* footer */
-  footer {
-    font-size: 1.2rem;
-    padding: 1rem;
-    margin-bottom: 8px;
-  }
+  body {
+		font-size: 1rem;
+	}
+	.text-heading {
+		font-size: 1.7rem;
+	}
+	section {
+		width: 90%;
+		margin: 60px auto;
+	}
+	.flex-1 {
+		/* flex-direction: column; */
+		gap: 50px;
+	}
+	.flex-2 {
+		/* flex-direction: column; */
+		gap: 50px;
+	}
+	#landing-front {
+		width: 100%;
+		padding: 0 60px;
+		gap: 60px;
+		margin: 80 auto;
+	}
+	.project-info {
+		/* background-color: red; */
+		/* max-width: 30%; */
+	}
+	.landing-title {
+		font-size: 2rem;
+		font-weight: 500;
+	}
+	#landing-front .landing-img-wrapper {
+		/* background-color: red; */
+		max-width: 40%;
+	}
+	#projects .proj-img-container {
+		min-height: 200px;
+		height: 300px;
+	}
+	.project-text p:first-child {
+		font-weight: 500;
+		font-size: 1.6rem;
+	}
+	#about {
+		padding: 100px 60px;
+	}
+	.contact-socials i {
+		font-size: 2rem;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -378,89 +365,72 @@ footer {
     width: 90%;
     margin: 30px auto;
   }
-
   .text-heading {
     font-size: 1.4rem;
   }
-
   /* header */
   header {
     font-size: 1.4rem;
   }
-
   .nav-menu {
     font-size: 1.15rem;
   }
-
   nav button {
     font-size: 0.9rem;
     padding: 5px;
   }
-
   /* landing */
   #landing-front {
     font-size: 27px;
     padding: 4%;
   }
-
   /* about */
   #about p {
     margin: 3rem auto;
     font-size: 16px;
   }
-
   .skills-logos i {
     font-size: 1.8rem;
   }
-
   #about .skills-logos p {
     margin: 4%;
   }
-
   /* project */
   .tab button {
     padding: 6px 10px;
     font-size: 15px;
     margin: 5px;
   }
-
   .project-btns {
     gap: 10px;
     margin-top: 10px;
   }
-
   .project-btns a {
     padding: 10px 14px;
     margin: 0px;
     letter-spacing: 2px;
     font-size: 13px;
   }
-
   .project-text {
     font-size: 1rem;
     margin: 30px 0;
   }
-
   #projects .proj-img-container {
     width: 90%;
     margin: 20px auto;
   }
-
   /* contact */
   #contact .contact-message {
     margin-top: 15px;
     width: 80%;
     font-size: 1.1rem;
   }
-
   .contact-mail {
     margin: 8px 0;
   }
-
   .contact-socials i {
     font-size: 2.3rem;
   }
-
   #contact form {
     min-width: 300px;
     width: 85%;
@@ -468,21 +438,18 @@ footer {
     margin-top: 20px;
     gap: 1rem;
   }
-
   form input,
   form textarea {
     padding: 10px;
     padding-left: 13px;
     font-size: 1rem;
   }
-
   form button {
     height: 2%;
     padding: 8px;
     letter-spacing: 3px;
     font-size: 15px;
   }
-
   /* footer */
   footer {
     font-size: 1rem;
@@ -492,77 +459,60 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
-  hr {
-    width: 95%;
-  }
-
   section {
     width: 90%;
     margin: 30px auto;
   }
-
   .text-heading {
     font-size: 1.4rem;
   }
-
   /* header */
   header {
     font-size: 1.3rem;
   }
-
   .nav-menu {
     font-size: 1rem;
   }
-
   nav button {
     font-size: 0.9rem;
     padding: 4px;
   }
-
   /* landing */
   #landing-front {
     font-size: 27px;
     padding: 7%;
   }
-
   /* about */
   #about p {
     margin: 2.5rem auto;
     font-size: 13px;
   }
-
   .skills-logos i {
     font-size: 1.8rem;
   }
   #about .skills-logos p {
     font-size: 12px;
   }
-
   #about .skills-logos p {
     margin: 3%;
   }
-
   /* project */
   #projects > p {
     font-size: 11px;
   }
-
   .tab button {
     padding: 6px 8px;
     font-size: 12px;
   }
-
   .project-btns {
     gap: 5px;
     margin-top: 10px;
   }
-
   .project-btns a {
     padding: 5px 10px;
     margin-bottom: 5px;
     font-size: 12px;
   }
-
   .project-text {
     font-size: 13px;
     margin: 15px 0;
@@ -570,23 +520,19 @@ footer {
   .project-text .description {
     font-size: 12px;
   }
-
   #projects .proj-img-container {
     width: 100%;
     margin: 30px auto;
   }
-
   /* contact */
   #contact {
     padding: 0;
   }
-
   #contact .contact-message {
     margin-top: 15px;
     width: 100%;
     font-size: 1rem;
   }
-
   /* footer */
   footer {
     font-size: 14px;
@@ -601,34 +547,34 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
-
   nav p {
     margin-left: 2.5rem;
   }
-
   .toggle-button {
     display: flex;
   }
-
   .nav-menu {
     display: none;
     width: 100%;
     flex-direction: column;
   }
-
   .nav-menu li {
     text-align: center;
   }
-
   .nav-menu li a {
     padding: 0.5rem 1rem;
   }
-
   .nav-menu.active {
     display: flex;
   }
-
   .nav-menu button {
     margin-bottom: 1rem;
   }
 }
+
+/* for debugging */
+/* * {
+	background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
