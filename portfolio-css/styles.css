@@ -93,7 +93,7 @@ a.anchor {
 #landing-front {
   max-width: 1400px;
   width: 100%;
-	padding: 0 100px;
+  padding: 0 100px;
   /* background-color: lightblue; */
   gap: 80px;
   margin: 120px auto;
@@ -133,16 +133,12 @@ a.anchor {
 
 .skills-logos {
   text-align: center;
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 60px; */
-	
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-	gap: 100px;
+  gap: 100px;
 }
 .skills-logos i {
   font-size: 2.5rem;
@@ -261,284 +257,308 @@ footer {
   text-align: center;
   padding: 1rem;
   padding-bottom: 1.5rem;
-  /* background-color: var(--secondary-color);
-	color: var(--main-color); */
 }
 
 /* responsive design section below */
 @media only screen and (max-width: 1281px) {
-	body {
-		font-size: 1.15rem;
-	}
-	.text-heading {
-		font-size: 1.8rem;
-	}
-	section {
-		width: 90%;
-		margin: 60px auto;
-	}
-	.flex-1 {
-		/* flex-direction: column; */
-		gap: 60px;
-	}
-	.flex-2 {
-		/* flex-direction: column; */
-		gap: 60px;
-	}
-	#landing-front {
-		width: 100%;
-		padding: 0 60px;
-		gap: 60px;
-		margin: 80 auto;
-	}
-	.landing-title {
-		font-size: 2.5rem;
-		font-weight: 500;
-	}
-	.project-text p:first-child {
-		font-weight: 500;
-		font-size: 1.6rem;
-	}
-	#about {
-		padding: 100px 60px;
-	}
-	.contact-socials i {
-		font-size: 2rem;
-	}
+  body {
+    font-size: 1.15rem;
+  }
+  .text-heading {
+    font-size: 1.8rem;
+  }
+  section {
+    width: 90%;
+    margin: 60px auto;
+  }
+  .flex-1 {
+    gap: 60px;
+  }
+  .flex-2 {
+    gap: 60px;
+  }
+  #landing-front {
+    width: 100%;
+    padding: 0 60px;
+    gap: 60px;
+    margin: 80 auto;
+  }
+  .landing-title {
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+  #projects .proj-img-container {
+    height: 400px;
+  }
+  .project-text p:first-child {
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+  #about {
+    padding: 100px 60px;
+  }
+  .contact-socials i {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 993px) {
   body {
-		font-size: 1rem;
+    font-size: 1rem;
+  }
+  .text-heading {
+    font-size: 1.7rem;
+  }
+  section {
+    width: 90%;
+    margin: 50px auto;
+  }
+  .flex-1 {
+    gap: 50px;
+  }
+  .flex-2 {
+    gap: 50px;
+  }
+  #landing-front {
+    width: 100%;
+    padding: 0 60px;
+    gap: 60px;
+    margin: 80 auto;
+  }
+  .landing-title {
+    font-size: 2rem;
+  }
+  #landing-front .landing-img-wrapper {
+    max-width: 40%;
+  }
+	#projects > div {
+		margin: 50px 0;
 	}
-	.text-heading {
-		font-size: 1.7rem;
+	#projects .text-heading {
+		margin-top: 10px;
 	}
-	section {
-		width: 90%;
-		margin: 60px auto;
-	}
-	.flex-1 {
-		/* flex-direction: column; */
-		gap: 50px;
-	}
-	.flex-2 {
-		/* flex-direction: column; */
-		gap: 50px;
-	}
-	#landing-front {
-		width: 100%;
-		padding: 0 60px;
-		gap: 60px;
-		margin: 80 auto;
-	}
-	.project-info {
-		/* background-color: red; */
-		/* max-width: 30%; */
-	}
-	.landing-title {
-		font-size: 2rem;
-		font-weight: 500;
-	}
-	#landing-front .landing-img-wrapper {
-		/* background-color: red; */
-		max-width: 40%;
-	}
-	#projects .proj-img-container {
-		min-height: 200px;
-		height: 300px;
-	}
-	.project-text p:first-child {
-		font-weight: 500;
-		font-size: 1.6rem;
-	}
-	#about {
-		padding: 100px 60px;
-	}
-	.contact-socials i {
-		font-size: 2rem;
+  #projects .proj-img-container {
+    height: 300px;
+  }
+  .project-text p:first-child {
+    font-size: 1.6rem;
+  }
+  .project-btns {
+    gap: 28px;
+    margin-top: 24px;
+  }
+  .project-btns a {
+    padding: 16px 34px;
+  }
+  #about {
+    padding: 100px 60px;
+  }
+  #about .about-story {
+    gap: 20px;
+  }
+  .skills-logos {
+    gap: 70px;
+  }
+  .skills-logos i {
+    font-size: 2.2rem;
+  }
+  #about .skills-logos p {
+    font-size: 1rem;
+  }
+  .contact-socials i {
+    font-size: 2rem;
+  }
+  #contact .contact-message {
+    gap: 20px;
+  }
+  #contact form {
+    width: 60%;
+    padding: 50px 40px;
+    margin-top: 30px;
+    gap: 5px;
+  }
+  form input,
+  form textarea {
+    padding: 14px;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+  }
+  #message {
+    font-size: 1rem;
+  }
+	form button {
+		height: 45px;
+		font-size: 1.05rem;
 	}
 }
 
 @media only screen and (max-width: 768px) {
+	header {
+		padding: 0;
+	}
+  body {
+    font-size: 1.2rem;
+  }
   section {
-    width: 90%;
-    margin: 30px auto;
+    margin: 50px auto;
   }
-  .text-heading {
-    font-size: 1.4rem;
+  .flex-1 {
+    flex-direction: column;
+    gap:40px;
   }
-  /* header */
-  header {
-    font-size: 1.4rem;
+  .flex-2 {
+    flex-direction: column;
+    gap: 40px;
   }
-  .nav-menu {
-    font-size: 1.15rem;
-  }
-  nav button {
-    font-size: 0.9rem;
-    padding: 5px;
-  }
-  /* landing */
   #landing-front {
-    font-size: 27px;
-    padding: 4%;
+    gap: 40px;
+		margin: 80px auto;
   }
-  /* about */
-  #about p {
-    margin: 3rem auto;
-    font-size: 16px;
+  .landing-title {
+    font-size: 2.5rem;
   }
-  .skills-logos i {
-    font-size: 1.8rem;
+  #landing-front .landing-img-wrapper {
+    max-width: 100%;
   }
-  #about .skills-logos p {
-    margin: 4%;
+	#projects > div:nth-child(odd) div.flex-half {
+		text-align: left;
+	}
+	#projects > div:nth-child(odd) div.project-btns {
+		justify-content: start;
+	}
+  #projects .proj-img-container {
+		min-height: 400px;
   }
-  /* project */
-  .tab button {
-    padding: 6px 10px;
-    font-size: 15px;
-    margin: 5px;
+	.project-text {
+		gap: 15px;
+	}
+  .project-text p:first-child {
+    font-size: 1.4rem;
   }
   .project-btns {
-    gap: 10px;
-    margin-top: 10px;
+    gap: 28px;
+    margin-top: 15px;
   }
   .project-btns a {
-    padding: 10px 14px;
-    margin: 0px;
-    letter-spacing: 2px;
-    font-size: 13px;
+    padding: 14px 30px;
   }
-  .project-text {
-    font-size: 1rem;
-    margin: 30px 0;
+  #about {
+    padding: 100px 60px;
   }
-  #projects .proj-img-container {
-    width: 90%;
-    margin: 20px auto;
-  }
-  /* contact */
-  #contact .contact-message {
-    margin-top: 15px;
-    width: 80%;
-    font-size: 1.1rem;
-  }
-  .contact-mail {
-    margin: 8px 0;
-  }
-  .contact-socials i {
-    font-size: 2.3rem;
+  .skills-logos {
+    gap: 60px;
   }
   #contact form {
-    min-width: 300px;
-    width: 85%;
-    padding: 30px 23px;
-    margin-top: 20px;
-    gap: 1rem;
+    width: 100%;
+    margin-top: 10px;
+    gap: 10px;
   }
   form input,
   form textarea {
-    padding: 10px;
-    padding-left: 13px;
+    padding: 16px;
+    margin-bottom: 20px;
     font-size: 1rem;
   }
-  form button {
-    height: 2%;
-    padding: 8px;
-    letter-spacing: 3px;
-    font-size: 15px;
+  #message {
+    font-size: 1.05rem;
   }
-  /* footer */
-  footer {
-    font-size: 1rem;
-    padding: 1rem;
-    margin-bottom: 8px;
-  }
+	form button {
+		height: 60px;
+		font-size: 1.2rem;
+	}
 }
 
 @media only screen and (max-width: 480px) {
-  section {
-    width: 90%;
-    margin: 30px auto;
+	header {
+		font-size: 1.4rem;
+		padding: 0;
+		line-height: 60px;
+	}
+	.nav-menu {
+		font-size: 1.1rem;
+		gap: 0px;
+	}
+  body {
+    font-size: .9rem;
   }
   .text-heading {
     font-size: 1.4rem;
   }
-  /* header */
-  header {
-    font-size: 1.3rem;
+  section {
+    margin: 25px auto;
   }
-  .nav-menu {
-    font-size: 1rem;
+  .flex-1 {
+    gap: 30px;
   }
-  nav button {
-    font-size: 0.9rem;
-    padding: 4px;
+  .flex-2 {
+    gap: 30px;
   }
-  /* landing */
   #landing-front {
-    font-size: 27px;
-    padding: 7%;
+    padding: 0 20px;
+    gap: 30px;
+		margin: 40px auto;
   }
-  /* about */
-  #about p {
-    margin: 2.5rem auto;
-    font-size: 13px;
+	#landing-front .landing-info {
+		gap: 18px;
+	}
+  .landing-title {
+    font-size: 1.6rem;
   }
-  .skills-logos i {
-    font-size: 1.8rem;
+	#projects > div {
+		margin: 30px 0;
+	}
+  #projects .proj-img-container {
+		min-height: 250px;
   }
-  #about .skills-logos p {
-    font-size: 12px;
-  }
-  #about .skills-logos p {
-    margin: 3%;
-  }
-  /* project */
-  #projects > p {
-    font-size: 11px;
-  }
-  .tab button {
-    padding: 6px 8px;
-    font-size: 12px;
+	.project-text {
+		gap: 15px;
+	}
+  .project-text p:first-child {
+    font-size: 1.2rem;
   }
   .project-btns {
-    gap: 5px;
-    margin-top: 10px;
+    gap: 28px;
+    margin-top: 15px;
   }
   .project-btns a {
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    font-size: 12px;
+    padding: 10px 24px;
   }
-  .project-text {
-    font-size: 13px;
-    margin: 15px 0;
+  #about {
+    padding: 60px 25px;
   }
-  .project-text .description {
-    font-size: 12px;
+  #about .about-story {
+    gap: 20px;
   }
-  #projects .proj-img-container {
-    width: 100%;
-    margin: 30px auto;
+  .skills-logos {
+    gap: 40px;
   }
-  /* contact */
-  #contact {
-    padding: 0;
+  .skills-logos i {
+    font-size: 1.7rem;
+  }
+  #about .skills-logos p {
+    font-size: .8rem;
   }
   #contact .contact-message {
-    margin-top: 15px;
+    gap: 16px;
+  }
+  #contact form {
     width: 100%;
-    font-size: 1rem;
+    padding: 40px 30px;
+    gap: 10px;
   }
-  /* footer */
-  footer {
-    font-size: 14px;
-    padding: 8px;
-    margin-bottom: 8px;
+  form input,
+  form textarea {
+    padding: 16px;
+    margin-bottom: 10px;
+    font-size: .9rem;
   }
+  #message {
+    font-size: .95rem;
+  }
+	form button {
+		height: 40px;
+		font-size: .9rem;
+	}
 }
 
 /* nav bar on smaller screens */
@@ -562,13 +582,10 @@ footer {
     text-align: center;
   }
   .nav-menu li a {
-    padding: 0.5rem 1rem;
+    padding: 0 1rem;
   }
   .nav-menu.active {
     display: flex;
-  }
-  .nav-menu button {
-    margin-bottom: 1rem;
   }
 }
 
