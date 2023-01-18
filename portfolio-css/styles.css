@@ -414,6 +414,9 @@ footer {
 	header {
 		padding: 0;
 	}
+	nav {
+		width: 100%;
+	}
   body {
     font-size: 1.2rem;
   }
@@ -463,6 +466,9 @@ footer {
   #about {
     padding: 100px 60px;
   }
+	#about .flex-1 {
+		width: 100%;
+	}
   .skills-logos {
     gap: 60px;
   }
