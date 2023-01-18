@@ -35,7 +35,7 @@ body {
   background-color: var(--main-color);
   color: var(--secondary-color);
   font-family: Roboto, monospace, sans-serif, Arial;
-  transition: 0.3s;
+  transition: 0.2s;
   font-size: 1.25rem;
 }
 .portfolio-container {
@@ -123,6 +123,7 @@ a.anchor {
 }
 #about .flex-1 {
   max-width: 1800px;
+	width: 90%;
   margin: 0 auto;
 }
 #about .about-story {
@@ -260,6 +261,23 @@ footer {
 }
 
 /* responsive design section below */
+@media only screen and (max-width: 1921px) {
+  .text-heading {
+    font-size: 1.8rem;
+  }
+  section {
+    margin: 80px auto;
+  }
+  #landing-front {
+    padding: 0 60px;
+    gap: 60px;
+  }
+  .project-text p:first-child {
+    font-weight: 500;
+    font-size: 1.7rem;
+  }
+}
+
 @media only screen and (max-width: 1281px) {
   body {
     font-size: 1.15rem;

@@ -4,7 +4,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 	padding: 0 60px;
   z-index: 100;
   background-color: var(--secondary-color);
@@ -20,13 +20,15 @@ nav {
   color: #F9F6EE;
 	max-width: 1800px;
 	margin: 0 auto;
+	width: 90%;
+	/* background-color: red; */
 }
 nav p {
   /* width: 40%; */
 	margin-right: auto;
 }
 .nav-menu {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 	/* background-color: orange; */
 	gap: 30px;
   display: flex;
