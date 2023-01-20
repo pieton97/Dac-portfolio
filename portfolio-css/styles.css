@@ -262,9 +262,9 @@ footer {
 
 /* responsive design section below */
 @media only screen and (max-width: 1921px) and (min-width: 1282px) {
-	nav {
-		max-width: 1400px;
-	}
+  nav {
+    max-width: 1400px;
+  }
   .text-heading {
     font-size: 1.8rem;
   }
@@ -273,23 +273,29 @@ footer {
     max-width: 1400px;
   }
   #landing-front {
-		gap: 60px;
-		padding: 0;
+    gap: 60px;
+    padding: 0;
   }
-	.landing-title {
-		font-size: 2.8rem;
-	}
-	#projects .proj-img-container {
-    height: 400px;
+  .landing-title {
+    font-size: 2.8rem;
+  }
+  #projects .proj-img-container {
+    height: 430px;
   }
   .project-text p:first-child {
     font-weight: 500;
     font-size: 1.7rem;
   }
-	#about .flex-1 {
-		max-width: 1400px;
-	}
-	.contact-socials i {
+  #about .flex-1 {
+    max-width: 1400px;
+  }
+  .skills-logos i {
+    font-size: 2.3rem;
+  }
+  #about .skills-logos p {
+    font-size: 0.9rem;
+  }
+  .contact-socials i {
     font-size: 2.3rem;
   }
 }
