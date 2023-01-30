@@ -102,6 +102,7 @@ a.anchor {
   display: flex;
   flex-direction: column;
   gap: 30px;
+	padding-right: 60px;
 }
 .landing-title {
   font-size: 3rem;
@@ -375,6 +376,9 @@ footer {
     padding: 0 60px;
     gap: 60px;
     margin: 80 auto;
+  }
+	#landing-front .landing-info {
+    padding-right: 0;
   }
   .landing-title {
     font-size: 2rem;
