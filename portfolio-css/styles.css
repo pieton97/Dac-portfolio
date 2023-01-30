@@ -272,12 +272,14 @@ footer {
     font-size: 1.8rem;
   }
   section {
-    margin: 80px auto;
+    margin: 0px auto;
+		width: 100%;
+		padding: 0 60px;
     max-width: 1400px;
   }
   #landing-front {
     gap: 60px;
-    padding: 0;
+    padding: 0 60px;
   }
   .landing-title {
     font-size: 2.8rem;
@@ -289,8 +291,14 @@ footer {
     font-weight: 500;
     font-size: 1.7rem;
   }
+	#about {
+		padding: 150px 60px;
+		background-color: var(--secondary-color);
+		color: var(--main-color);
+	}
   #about .flex-1 {
     max-width: 1400px;
+		width: 100%;
   }
   .skills-logos i {
     font-size: 2.3rem;
