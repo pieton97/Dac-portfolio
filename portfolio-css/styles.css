@@ -13,6 +13,8 @@
 :root {
   --main-color: #ffffff;
   --secondary-color: #000000;
+  /* --main-color: rgba(255, 255, 255, 0.87); */
+  /* --secondary-color: #242424; */
   --light-gray: #717171;
   --blue-accent: #2275c1;
   /* --project-accent: #e4872a; */
@@ -266,8 +268,12 @@ footer {
 	body {
 		font-size: 1.125rem;
 	}
+	header {
+		padding: 0;
+	}
   nav {
     max-width: 1400px;
+		padding: 0 60px;
   }
   .text-heading {
     font-size: 1.8rem;
